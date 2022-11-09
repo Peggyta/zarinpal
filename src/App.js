@@ -1,5 +1,5 @@
 import './App.css';
-import {Router,Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 //Components
 import Navbar from './components/Navbar';
 import ContactUs from './pages/ContactUs';
@@ -11,7 +11,7 @@ import Products from './pages/Products';
 
 function App() {
   return (
-    <Router>
+    <div>
         <Navbar />
       <Routes>
           <Route path="products" element={<Products />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="more" element={<More />} />
           <Route path="my-zarin-pal" element={<MyZarinPal />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 

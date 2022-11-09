@@ -13,32 +13,32 @@ const Navbar = () => {
             <div className='list-container'>
                 <ul className='navbar-wrapper'>
                     <li>
-                        <NavLink to="">
+                        <NavLink to="/products">
                             محصولات
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="">
+                        <NavLink to="/price">
                             تعرفه‌ها
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="">
+                        <NavLink to="/developers">
                             توسعه‌دهنده‌ها
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="">
+                        <NavLink to="/contact-us">
                             تماس با ما
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="">
+                        <NavLink to="/more">
                             بیش‌تر
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="">
+                        <NavLink to="/my-zarin-pal">
                             زرین‌پال‌من
                         </NavLink>
                     </li>
