@@ -2,5 +2,7 @@
 @import "./variables";
 
 header {
-    
+    @include flexStyling;
+    background-color: ($tertiary-color, 0.72);
+    backdrop-filter: blue(20px);
 }
