@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 //Image
 import logo from '../images/logo-white.svg';
+//Style
+import '../scss/Navbar.css';
 
 const Navbar = () => {
     return (
