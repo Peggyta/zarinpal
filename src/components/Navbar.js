@@ -8,7 +8,9 @@ const Navbar = () => {
     return (
        <header>
             <div className='logo-container'>
-                <img src={logo} alt='logo-image' />
+                <NavLink to="/">
+                    <img src={logo} alt='logo-image' />
+                </NavLink>
             </div>
             <div className='list-container'>
                 <ul className='navbar-wrapper'>

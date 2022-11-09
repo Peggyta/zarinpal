@@ -8,6 +8,7 @@ import More from './pages/More';
 import MyZarinPal from './pages/MyZarinPal';
 import Price from './pages/Price';
 import Products from './pages/Products';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="more" element={<More />} />
           <Route path="my-zarin-pal" element={<MyZarinPal />} />
+          <Route path="/" exact={true} element={<Home />} />
       </Routes>
     </div>
   );
