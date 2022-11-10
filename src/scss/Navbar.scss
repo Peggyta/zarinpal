@@ -19,7 +19,7 @@ header {
         .link-list {
             text-decoration: none;
             margin: 0 15px;
-            font-family: $font-medium;
+            @include fontDesign (0.9rem, $font-default);
         }
     }
 
