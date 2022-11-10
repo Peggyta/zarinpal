@@ -16,6 +16,8 @@ header {
     ul {
         display: flex;
         list-style-type: none;
+        line-height: 30px;
+        
 
         .link-list {
             text-decoration: none;
@@ -25,6 +27,18 @@ header {
         }
     }
 
+}
+
+.navbar-wrapper > li:last-child {
+    background-color: $lastChild-color;
+    border-radius: 20px;
+    margin: 0 15px;
+    @include fontDesign (0.6rem, $font-bold);
+    font-weight: 600;
+    padding: 0 12px;
+    &:hover {
+        background-color: $hover-color;
+    }
 }
 
 .logo-container {

@@ -37,6 +37,7 @@ header {
 header ul {
   display: flex;
   list-style-type: none;
+  line-height: 30px;
 }
 header ul .link-list {
   text-decoration: none;
@@ -44,6 +45,19 @@ header ul .link-list {
   font-size: 0.9rem;
   font-family: "ireanyekanwebmedium";
   color: #303030;
+}
+
+.navbar-wrapper > li:last-child {
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 20px;
+  margin: 0 15px;
+  font-size: 0.6rem;
+  font-family: "YekanBakhBold";
+  font-weight: 600;
+  padding: 0 12px;
+}
+.navbar-wrapper > li:last-child:hover {
+  background-color: rgb(249, 238, 238);
 }
 
 .logo-container {
