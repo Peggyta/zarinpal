@@ -49,3 +49,24 @@ header {
 .logo-container {
     @include marginNav;
 }
+
+/*Responsive*/
+@mixin responsive ($width) {
+    @if ($width == L) {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    
+    @else if ($width == M) {
+        @media (max-width: 990px) {
+            @content;
+        }
+    }
+
+    @else if ($width == S) {
+         @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
