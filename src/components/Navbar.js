@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-//Image
+//Image & Icons
 import logo from '../images/logo-white.svg';
+import { FiAlignJustify } from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
+import { FiX } from 'react-icons/fi';
 //Style
 import '../scss/Navbar.css';
 
@@ -13,40 +16,42 @@ const Navbar = () => {
                     <img src={logo} alt='logo-image' />
                 </NavLink>
             </div>
-            <div className='list-container'>
+            <nav>
                 <ul className='navbar-wrapper'>
                     <li>
-                        <NavLink to="/products">
+                        <NavLink className='link-list' to="/products">
                             محصولات
+                            <FiChevronDown className='drop-down-sign' />
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/price">
+                        <NavLink className='link-list' to="/price">
                             تعرفه‌ها
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/developers">
+                        <NavLink className='link-list' to="/developers">
                             توسعه‌دهنده‌ها
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact-us">
+                        <NavLink className='link-list' to="/contact-us">
                             تماس با ما
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/more">
+                        <NavLink className='link-list' to="/more">
                             بیش‌تر
+                            <FiChevronDown className='drop-down-sign' />
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/my-zarin-pal">
+                        <NavLink className='link-list' to="/my-zarin-pal">
                             زرین‌پال‌من
                         </NavLink>
                     </li>
                 </ul>
-            </div>
+            </nav>
        </header>
     );
 };
