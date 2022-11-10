@@ -54,8 +54,8 @@ header {
 @include responsive (S) {
     header {
         width: auto;
-        padding: 8px 10px;
-
+        height: 40px;
+        
         ul {
             display: none;
         }
@@ -65,12 +65,23 @@ header {
 @include responsive (M) {
     header {
         width: auto;
-        ul {
-            margin: 30px;
+        padding: 10px 40px; 
+        max-width: 700px;
+        img {
+           margin-right: -20px; 
         }
+    }
+    nav {
+        margin-right: auto;
     }
 
     .navbar-wrapper > li:last-child {
         display: none;
+    }
+}
+
+@include responsive (L) {
+    header {
+        width: 940px;
     }
 }

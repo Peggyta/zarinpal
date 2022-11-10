@@ -91,7 +91,7 @@ header ul .link-list {
 @media (max-width: 768px) {
   header {
     width: auto;
-    padding: 8px 10px;
+    height: 40px;
   }
   header ul {
     display: none;
@@ -101,12 +101,23 @@ header ul .link-list {
 @media (max-width: 990px) {
   header {
     width: auto;
+    padding: 10px 40px;
+    max-width: 700px;
   }
-  header ul {
-    margin: 30px;
+  header img {
+    margin-right: -20px;
+  }
+  nav {
+    margin-right: auto;
   }
   .navbar-wrapper > li:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    width: 940px;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
