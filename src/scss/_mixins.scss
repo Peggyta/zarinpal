@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+@mixin marginNav {
+    margin: 0 15px;
+}
+
 @mixin fontDesign ($fontSize, $fontFamily){
     font-size: $fontSize;
     font-family: $fontFamily;
