@@ -17,7 +17,6 @@ header {
         display: flex;
         list-style-type: none;
         line-height: 30px;
-        
 
         .link-list {
             text-decoration: none;
@@ -26,6 +25,12 @@ header {
             color: $primary-color;
         }
     }
+
+}
+
+.drop-down-sign {
+    display: inline-block;
+    margin: -6px 2px;
 
 }
 

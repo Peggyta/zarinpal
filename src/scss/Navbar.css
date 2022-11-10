@@ -47,6 +47,11 @@ header ul .link-list {
   color: #303030;
 }
 
+.drop-down-sign {
+  display: inline-block;
+  margin: -6px 2px;
+}
+
 .navbar-wrapper > li:last-child {
   background-color: rgba(232, 239, 254, 0.6);
   border-radius: 20px;
