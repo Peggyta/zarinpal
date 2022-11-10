@@ -35,4 +35,10 @@ header {
 }
 header ul {
   display: flex;
+  list-style-type: none;
+}
+header ul .link-list {
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: "YekanBakhMedium";
 }/*# sourceMappingURL=Navbar.css.map */
