@@ -1,0 +1,12 @@
+@import './mixins';
+@import './variables';
+
+header {
+    background-color: $light-color;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    font-family: $font-medium;
+}
