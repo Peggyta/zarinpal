@@ -15,23 +15,29 @@
 
 @include responsive (S) {
     .hambur-menu {
+        display: block;
         background-color: $light-color;
-        position: fixed;
-        top: 0;
-        right: 0;
         width: 100%;
-        height: 200px;
         z-index: 100;
-        font-family: $font-medium;
-        display: flex;
-        justify-content: baseline;
-        margin: auto;
+        height: 200px;
     
         ul {
-            flex-direction: column;
             list-style-type: none;
             margin-right: 30px; 
         }
+    }
+
+    .hambur-nav {
+        
+        position: fixed;
+        top: 0;
+        right: 0;
+        
+        
+        
+        font-family: $font-medium;
+        justify-content: cetern;
+        margin: auto;
     }
     
     .hambur-list {

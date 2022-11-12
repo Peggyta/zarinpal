@@ -82,6 +82,7 @@ header {
 @include responsive (S) {
     header {
         max-width: none;
+        padding: 10px 0;
         width: auto;
         height: 40px;
         
@@ -90,8 +91,13 @@ header {
         }
     }
 
+    .logo-container {
+        padding-right: 30px;
+    }
+
     .icon-container {
         display: block;
         font-size: 25px;
+        padding-left: 30px;
     }
 }
