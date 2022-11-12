@@ -4,40 +4,41 @@ import { NavLink } from 'react-router-dom';
 import { FiAlignJustify } from 'react-icons/fi';
 import { FiX } from 'react-icons/fi';
 //Style
-import '../scss/Navbar.css';
+import '../scss/Menu.css';
 
 const Menu = () => {
     return (
-       <header>
-            <nav>
-                <ul className='navbar-wrapper'>
+       <header className='hambur-menu'>
+            <nav className='hambur-nav'>
+                <ul className='hambur-wrapper'>
                     <li>
-                        <NavLink className='link-list' to="/price">
+                        <NavLink className='hambur-list' to="/price">
                             تعرفه‌ها
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className='link-list' to="/">
+                        <NavLink className='hambur-list' to="/">
                            اپلیکیشن
                         </NavLink>
                     </li>
+                    <div></div>
                     <li>
-                        <NavLink className='link-list' to="/">
+                        <NavLink className='hambur-list' to="/">
                             سوالات متداول
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className='link-list' to="/products">
+                        <NavLink className='hambur-list' to="/products">
                             محصولات
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className='link-list' to="/contact-us">
+                        <NavLink className='hambur-list' to="/contact-us">
                             تماس با ما
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className='link-list' to="/my-zarin-pal">
+                        <NavLink className='hambur-list' to="/my-zarin-pal">
                             زرین‌پال‌من
                         </NavLink>
                     </li>

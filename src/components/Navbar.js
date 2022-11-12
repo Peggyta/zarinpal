@@ -8,7 +8,10 @@ import { FiX } from 'react-icons/fi';
 //Style
 import '../scss/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({isClicked, setIsClicked}) => {
+    const clickHandler = () => {
+        setIsClicked(!isClicked)
+    };
     return (
        <header>
             <div className='logo-container'>
@@ -52,6 +55,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
+            {!isClicked ? (<FiAlignJustify onClick={clickHandler} /> ) : (<FiX onClick={clickHandler} /> )}
        </header>
     );
 };
