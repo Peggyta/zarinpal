@@ -1,6 +1,12 @@
 @import './mixins';
 @import './variables';
 
+@include responsive (XL) {
+    .hambur-menu {
+        display: none;
+    }
+}
+
 @include responsive (L) {
     .hambur-menu {
         display: none;
@@ -22,28 +28,14 @@
         height: 200px;
     
         ul {
+            display: flex;
+            flex-direction: column;
             list-style-type: none;
             margin-right: 30px; 
         }
     }
 
-    .hambur-nav {
-        
-        position: fixed;
-        top: 0;
-        right: 0;
-        
-        
-        
-        font-family: $font-medium;
-        justify-content: cetern;
-        margin: auto;
-    }
     
-    .hambur-list {
-        text-decoration: none;
-        color: $dark-color;
-    }
     
 }
 
