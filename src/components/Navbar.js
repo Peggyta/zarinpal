@@ -55,7 +55,11 @@ const Navbar = ({isClicked, setIsClicked}) => {
                     </li>
                 </ul>
             </nav>
-            {!isClicked ? (<FiAlignJustify onClick={clickHandler} /> ) : (<FiX onClick={clickHandler} /> )}
+            <div className='icon-container'>
+                {!isClicked ? 
+                (<FiAlignJustify onClick={clickHandler} className='nav-icon' /> ) : 
+                (<FiX onClick={clickHandler} className='nav-icon' /> )}
+            </div>
        </header>
     );
 };
