@@ -87,14 +87,14 @@ header ul .link-list {
   margin: 0 15px;
 }
 
+.icon-container {
+  display: none;
+}
+
 /*Responsive*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   header {
-    width: auto;
-    height: 40px;
-  }
-  header ul {
-    display: none;
+    width: 940px;
   }
 }
 
@@ -102,7 +102,9 @@ header ul .link-list {
   header {
     width: auto;
     padding: 10px 40px;
-    max-width: 700px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   header img {
     margin-right: -20px;
@@ -115,9 +117,18 @@ header ul .link-list {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   header {
-    width: 940px;
+    max-width: none;
+    width: auto;
+    height: 40px;
+  }
+  header nav {
+    display: none;
+  }
+  .icon-container {
+    display: block;
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

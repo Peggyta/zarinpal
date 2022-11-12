@@ -1,7 +1,7 @@
-@mixin flexStyling {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flexStyling ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 @mixin marginNav {

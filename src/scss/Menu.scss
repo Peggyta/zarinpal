@@ -10,8 +10,15 @@
     height: 200px;
     z-index: 100;
     font-family: $font-medium;
+    @include flexStyling (flex, flex-start, right);
+
     ul {
-        display: flex;
         flex-direction: column;
+        list-style-type: none; 
     }
+}
+
+.hambur-list {
+    text-decoration: none;
+    color: $dark-color;
 }

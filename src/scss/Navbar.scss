@@ -2,7 +2,7 @@
 @import "./variables";
 
 header {
-    @include flexStyling;
+    @include flexStyling(flex, space-between, center);
     background-color: $tertiary-color;
     backdrop-filter: blur(20px);
     width: 1170px;
@@ -50,15 +50,14 @@ header {
     @include marginNav;
 }
 
+.icon-container {
+    display: none;
+}
+
 /*Responsive*/
-@include responsive (S) {
+@include responsive (L) {
     header {
-        width: auto;
-        height: 40px;
-        
-        ul {
-            display: none;
-        }
+        width: 940px;
     }
 }
 
@@ -66,9 +65,9 @@ header {
     header {
         width: auto;
         padding: 10px 40px; 
-        max-width: 700px;
+        max-width: fit-content;
         img {
-           margin-right: -20px; 
+            margin-right: -20px; 
         }
     }
     nav {
@@ -80,8 +79,19 @@ header {
     }
 }
 
-@include responsive (L) {
+@include responsive (S) {
     header {
-        width: 940px;
+        max-width: none;
+        width: auto;
+        height: 40px;
+        
+        nav {
+            display: none;
+        }
+    }
+
+    .icon-container {
+        display: block;
+        font-size: 25px;
     }
 }
