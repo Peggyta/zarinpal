@@ -1,24 +1,43 @@
 @import './mixins';
 @import './variables';
 
-.hambur-menu {
-    background-color: $light-color;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 200px;
-    z-index: 100;
-    font-family: $font-medium;
-    @include flexStyling (flex, flex-start, right);
-
-    ul {
-        flex-direction: column;
-        list-style-type: none; 
+@include responsive (L) {
+    .hambur-menu {
+        display: none;
     }
 }
 
-.hambur-list {
-    text-decoration: none;
-    color: $dark-color;
+@include responsive (M) {
+    .hambur-menu {
+        display: none;
+    }
 }
+
+@include responsive (S) {
+    .hambur-menu {
+        background-color: $light-color;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 200px;
+        z-index: 100;
+        font-family: $font-medium;
+        display: flex;
+        justify-content: baseline;
+        margin: auto;
+    
+        ul {
+            flex-direction: column;
+            list-style-type: none;
+            margin-right: 30px; 
+        }
+    }
+    
+    .hambur-list {
+        text-decoration: none;
+        color: $dark-color;
+    }
+    
+}
+
