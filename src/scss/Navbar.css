@@ -103,32 +103,7 @@ div[role='menu'].visible {
   border: none;
   background-color: unset;
   position: relative;
-}
-
-#dropDown-container {
-  position: absolute;
-  top: 76px;
-  left: 234px;
-  width: 115px;
-  border-top: 5px solid #f8e88b;
-  border-radius: 10px;
-}
-
-#dropDown-container ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 10px 0;
-}
-
-#dropDown-container ul a {
-  text-decoration: none;
-  font-size: 0.94rem;
-  font-family: "YekanBakhMedium";
-  color: #000000;
-}
-
-.drop-list-items {
-  padding: 7px;
+  cursor: pointer;
 }
 
 .visible {
@@ -140,6 +115,31 @@ div[role='menu'].visible {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
+  position: absolute;
+  top: 76px;
+  left: 234px;
+  width: 115px;
+  border-top: 5px solid #f8e88b;
+  border-radius: 10px;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.visible ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.visible ul a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "YekanBakhMedium";
+  color: #000000;
+}
+
+.drop-list-items {
+  padding: 7px;
 }
 
 /*Responsive*/
@@ -185,6 +185,15 @@ div[role='menu'].visible {
     display: block;
     font-size: 25px;
     padding-left: 30px;
+  }
+  #dropDown-menu {
+    display: none;
+  }
+  div[role='menu'] {
+    display: none;
+  }
+  .visible {
+    display: none;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

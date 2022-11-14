@@ -64,12 +64,17 @@ div[role='menu'].visible {
 #dropDown-menu {
     @include dropMenus;
     position: relative;
+    cursor: pointer;
 }
 
-#dropDown-container {
+.visible {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-color;
     @include dropDownPosition (absolute, 76px, 234px);
     width:115px;
     @include dropMeuBorder;
+    transition: all .25s ease;
 
     ul {
         list-style-type: none;
@@ -77,7 +82,7 @@ div[role='menu'].visible {
         padding: 10px 0;
         a {
             text-decoration: none;
-            @include fontDesign (0.94rem, $font-medium);
+            @include fontDesign (0.9rem, $font-medium);
             color: $dark-color;
         }
     }
@@ -85,12 +90,6 @@ div[role='menu'].visible {
 
 .drop-list-items {
     padding: 7px;
-}
-
-.visible {
-    display: flex;
-    flex-direction: column;
-    background-color: $light-color;
 }
 
 /*Responsive*/
@@ -139,4 +138,16 @@ div[role='menu'].visible {
         font-size: 25px;
         padding-left: 30px;
     }
+    #dropDown-menu {
+        display: none;
+    }
+
+    div[role='menu'] {
+        display: none;
+    }
+
+    .visible {
+        display: none;
+    }
+    
 }
