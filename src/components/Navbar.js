@@ -49,6 +49,15 @@ const Navbar = ({isClicked, setIsClicked}) => {
                         <button className='link-list' id='dropDown-menu' {...buttonProps}>بیش‌تر
                             <FiChevronDown className='drop-down-sign' />
                         </button>
+                        <div className={isOpen ? 'visible' : ''} id='drop-items' role='menu'>
+                            <ul>
+                                <li className='drop-list-items'><a href='#'>وبلاگ</a></li>
+                                <li className='drop-list-items'><a href='#'>دریافت شماره شبا</a></li>
+                                <li className='drop-list-items'><a href='#'>سوالات متداول</a></li>
+                                <li className='drop-list-items'><a href='#'>اپلیکیشن</a></li>
+                                <li className='drop-list-items'><a href='#'>زرین‌بین</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <NavLink className='link-list' to="/my-zarin-pal">
@@ -63,15 +72,7 @@ const Navbar = ({isClicked, setIsClicked}) => {
                 (<FiX onClick={clickHandler} className='nav-icon' /> )}
             </div>
        </header>
-            <div className='dropDown-container'>
-                <ul className={isOpen ? 'visible' : ''} role='menu'>
-                            <li><a href='#'>سوالات متداول</a></li>
-                            <li><a href='#'>سوالات متداول</a></li>
-                            <li><a href='#'>سوالات متداول</a></li>
-                            <li><a href='#'>سوالات متداول</a></li>
-                            <li><a href='#'>سوالات متداول</a></li>
-                        </ul>
-            </div>
+            
         </>
     );
 };
