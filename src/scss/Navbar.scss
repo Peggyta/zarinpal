@@ -55,41 +55,37 @@ header {
 }
 
 div[role='menu'] {
-    visibility: hidden;
+    display: none;
 }
 div[role='menu'].visible {
-    visibility: visible;
+    display: block; 
+}
+
+.visible {
+    width:115px;
+    background-color: $light-color;
+    @include dropMeuBorder;
+    @include dropDownPosition (absolute, 76px, 135px);
 }
 
 #dropDown-menu {
     @include dropMenus;
     position: relative;
-    cursor: pointer;
-}
-
-.visible {
-    display: flex;
-    flex-direction: column;
-    background-color: $light-color;
-    @include dropDownPosition (absolute, 76px, 234px);
-    width:115px;
-    @include dropMeuBorder;
-    transition: all .25s ease;
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-        padding: 10px 0;
-        a {
-            text-decoration: none;
-            @include fontDesign (0.9rem, $font-medium);
-            color: $dark-color;
-        }
-    }
+    cursor: pointer;    
 }
 
 .drop-list-items {
     padding: 7px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+    a {
+        text-decoration: none;
+        @include fontDesign (0.9rem, $font-medium);
+        color: $dark-color;
+    }
 }
 
 /*Responsive*/
