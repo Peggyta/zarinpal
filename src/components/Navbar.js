@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 //Image & Icons
 import logo from '../images/logo-white.svg';
 import { FiAlignJustify } from 'react-icons/fi';
@@ -9,6 +10,7 @@ import { FiX } from 'react-icons/fi';
 import '../scss/Navbar.css';
 
 const Navbar = ({isClicked, setIsClicked}) => {
+    const { buttonProps, itemProps, isOpen } = useDropdownMenu(2);
     const clickHandler = () => {
         setIsClicked(!isClicked)
     };

@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 //Style
 import '../scss/Menu.css';
 import { FiX } from 'react-icons/fi';
-import { FiAlignJustify } from 'react-icons/fi';
 
 const Menu = ({isClicked, setIsClicked}) => {
     const clickHandler = () => {
