@@ -148,9 +148,7 @@ div[role='menu'].visible {
   header {
     width: auto;
     padding: 10px 40px;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: auto;
   }
   header img {
     margin-right: -20px;
@@ -160,6 +158,11 @@ div[role='menu'].visible {
   }
   .navbar-wrapper > li:last-child {
     display: none;
+  }
+  .visible {
+    position: absolute;
+    top: 55px;
+    left: 30px;
   }
 }
 

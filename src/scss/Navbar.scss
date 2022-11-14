@@ -99,7 +99,7 @@ div[role='menu'].visible {
     header {
         width: auto;
         padding: 10px 40px; 
-        max-width: fit-content;
+        max-width: auto;
         img {
             margin-right: -20px; 
         }
@@ -110,6 +110,10 @@ div[role='menu'].visible {
 
     .navbar-wrapper > li:last-child {
         display: none;
+    }
+
+    .visible {
+        @include dropDownPosition (absolute, 55px, 30px);
     }
 }
 
