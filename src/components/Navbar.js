@@ -45,10 +45,12 @@ const Navbar = ({isClicked, setIsClicked}) => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className='link-list' to="/more">
-                            بیش‌تر
+                        <button className='link-list' {...buttonProps}>بیش‌تر
                             <FiChevronDown className='drop-down-sign' />
-                        </NavLink>
+                        </button>
+                        <ul className={isOpen ? 'visible' : ''} role='menu'>
+                            <li><a href='#'>سوالات متداول</a></li>
+                        </ul>
                     </li>
                     <li>
                         <NavLink className='link-list' to="/my-zarin-pal">
