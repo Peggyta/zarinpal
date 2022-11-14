@@ -91,11 +91,11 @@ header ul .link-list {
   display: none;
 }
 
-ul[role='menu'] {
+div[role='menu'] {
   visibility: hidden;
 }
 
-ul[role='menu'].visible {
+div[role='menu'].visible {
   visibility: visible;
 }
 
@@ -105,14 +105,33 @@ ul[role='menu'].visible {
   position: relative;
 }
 
-.dropDown-container {
+#dropDown-container {
   position: absolute;
   top: 76px;
-  left: 255px;
-  background-color: aqua;
+  left: 234px;
+  width: 115px;
+  border-top: 5px solid #f8e88b;
+  border-radius: 10px;
 }
 
-ul .visible {
+#dropDown-container ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#dropDown-container ul a {
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-family: "YekanBakhMedium";
+  color: #000000;
+}
+
+.drop-list-items {
+  padding: 7px;
+}
+
+.visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +139,7 @@ ul .visible {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #ffffff;
 }
 
 /*Responsive*/

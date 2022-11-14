@@ -18,6 +18,17 @@
     background-color: unset;
 }
 
+@mixin dropMeuBorder {
+    border-top: 5px solid #f8e88b;
+    border-radius: 10px;
+}
+
+@mixin dropDownPosition ($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
 /*Responsive*/
 @mixin responsive ($width) {
     

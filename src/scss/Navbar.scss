@@ -54,10 +54,10 @@ header {
     display: none;
 }
 
-ul[role='menu'] {
+div[role='menu'] {
     visibility: hidden;
 }
-ul[role='menu'].visible {
+div[role='menu'].visible {
     visibility: visible;
 }
 
@@ -66,16 +66,31 @@ ul[role='menu'].visible {
     position: relative;
 }
 
-.dropDown-container {
-    position: absolute;
-    top: 76px;
-    left: 255px;
-    background-color: aqua;
+#dropDown-container {
+    @include dropDownPosition (absolute, 76px, 234px);
+    width:115px;
+    @include dropMeuBorder;
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 0;
+        a {
+            text-decoration: none;
+            @include fontDesign (0.94rem, $font-medium);
+            color: $dark-color;
+        }
+    }
 }
 
-ul .visible {
+.drop-list-items {
+    padding: 7px;
+}
+
+.visible {
     display: flex;
     flex-direction: column;
+    background-color: $light-color;
 }
 
 /*Responsive*/
