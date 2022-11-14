@@ -54,6 +54,17 @@ header {
     display: none;
 }
 
+ul[role='menu'] {
+    visibility: hidden;
+}
+ul[role='menu'].visible {
+    visibility: visible;
+}
+
+#dropDown-menu {
+    @include dropMenus;
+}
+
 /*Responsive*/
 @include responsive (L) {
     header {

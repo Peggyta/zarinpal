@@ -91,6 +91,19 @@ header ul .link-list {
   display: none;
 }
 
+ul[role='menu'] {
+  visibility: hidden;
+}
+
+ul[role='menu'].visible {
+  visibility: visible;
+}
+
+#dropDown-menu {
+  border: none;
+  background-color: unset;
+}
+
 /*Responsive*/
 @media (max-width: 1200px) {
   header {

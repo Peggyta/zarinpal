@@ -13,6 +13,11 @@
     font-family: $fontFamily;
 }
 
+@mixin dropMenus {
+    border: none;
+    background-color: unset;
+}
+
 /*Responsive*/
 @mixin responsive ($width) {
     
