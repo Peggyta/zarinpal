@@ -63,6 +63,19 @@ ul[role='menu'].visible {
 
 #dropDown-menu {
     @include dropMenus;
+    position: relative;
+}
+
+.dropDown-container {
+    position: absolute;
+    top: 76px;
+    left: 255px;
+    background-color: aqua;
+}
+
+ul .visible {
+    display: flex;
+    flex-direction: column;
 }
 
 /*Responsive*/
