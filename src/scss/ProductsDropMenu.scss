@@ -1,0 +1,20 @@
+@import './mixins';
+@import './variables';
+
+.link-list {
+    @include marginNav;
+    @include fontDesign (0.9rem, $font-default);
+    color: $primary-color;
+}
+
+.drop-down-sign {
+    display: inline-block;
+    margin: -6px 2px;
+}
+
+.visible {
+    width:115px;
+    background-color: $light-color;
+    @include dropMeuBorder;
+    @include dropDownPosition (absolute, 76px, 135px);
+}

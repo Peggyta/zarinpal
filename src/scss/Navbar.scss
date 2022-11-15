@@ -28,12 +28,6 @@ header {
 
 }
 
-.drop-down-sign {
-    display: inline-block;
-    margin: -6px 2px;
-
-}
-
 .navbar-wrapper > li:last-child {
     background-color: $lastChild-color;
     border-radius: 20px;
@@ -52,40 +46,6 @@ header {
 
 .icon-container {
     display: none;
-}
-
-div[role='menu'] {
-    display: none;
-}
-div[role='menu'].visible {
-    display: block; 
-}
-
-.visible {
-    width:115px;
-    background-color: $light-color;
-    @include dropMeuBorder;
-    @include dropDownPosition (absolute, 76px, 135px);
-}
-
-#dropDown-menu {
-    @include dropMenus;
-    position: relative;
-    cursor: pointer;    
-}
-
-.drop-list-items {
-    padding: 7px;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    text-align: center;
-    padding: 10px 0;
-    a {
-        text-decoration: none;
-        @include fontDesign (0.9rem, $font-medium);
-        color: $dark-color;
-    }
 }
 
 /*Responsive*/
@@ -110,11 +70,7 @@ div[role='menu'].visible {
 
     .navbar-wrapper > li:last-child {
         display: none;
-    }
-
-    .visible {
-        @include dropDownPosition (absolute, 55px, 30px);
-    }
+    } 
 }
 
 @include responsive (S) {
@@ -138,16 +94,4 @@ div[role='menu'].visible {
         font-size: 25px;
         padding-left: 30px;
     }
-    #dropDown-menu {
-        display: none;
-    }
-
-    div[role='menu'] {
-        display: none;
-    }
-
-    .visible {
-        display: none;
-    }
-    
 }
