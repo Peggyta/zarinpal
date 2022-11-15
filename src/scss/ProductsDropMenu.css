@@ -106,13 +106,13 @@ div[role='menu'].products-menu {
 }
 
 @media (max-width: 768px) {
-  #dropDown-menu {
+  #products-button {
     display: none;
   }
   div[role='menu'] {
     display: none;
   }
-  .visible {
+  .products-menu {
     display: none;
   }
 }

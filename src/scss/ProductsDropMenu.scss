@@ -76,7 +76,7 @@ div[role='menu'].products-menu {
 
 @include responsive (S) {
     
-    #dropDown-menu {
+    #products-button {
         display: none;
     }
 
@@ -84,7 +84,7 @@ div[role='menu'].products-menu {
         display: none;
     }
 
-    .visible {
+    .products-menu {
         display: none;
     }
     
