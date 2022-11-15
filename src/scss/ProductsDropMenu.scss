@@ -34,11 +34,11 @@ div[role='menu'].products-menu {
 }
 
 .products-first-col {
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 
 .products-second-col {
-    padding: 0 30px;
+    padding: 0 40px;
     position: absolute;
     left: 0;
     top:20px;
@@ -61,4 +61,31 @@ div[role='menu'].products-menu {
 
 .products-menu a p:last-child {
     font-size: 0.75rem;
+}
+
+@include responsive (M) {
+
+    .products-menu {
+        width: 330px;
+        @include dropDownPosition (absolute, 55px, 310px);
+    }
+    .products-second-col {
+        padding: 0 30px;    
+    }
+}
+
+@include responsive (S) {
+    
+    #dropDown-menu {
+        display: none;
+    }
+
+    div[role='menu'] {
+        display: none;
+    }
+
+    .visible {
+        display: none;
+    }
+    
 }

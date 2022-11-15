@@ -64,11 +64,11 @@ div[role='menu'].products-menu {
 }
 
 .products-first-col {
-  padding: 10px 20px;
+  padding: 10px 25px;
 }
 
 .products-second-col {
-  padding: 0 30px;
+  padding: 0 40px;
   position: absolute;
   left: 0;
   top: 20px;
@@ -91,5 +91,29 @@ div[role='menu'].products-menu {
 
 .products-menu a p:last-child {
   font-size: 0.75rem;
+}
+
+@media (max-width: 990px) {
+  .products-menu {
+    width: 330px;
+    position: absolute;
+    top: 55px;
+    left: 310px;
+  }
+  .products-second-col {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #dropDown-menu {
+    display: none;
+  }
+  div[role='menu'] {
+    display: none;
+  }
+  .visible {
+    display: none;
+  }
 }
 /*# sourceMappingURL=ProductsDropMenu.css.map */
