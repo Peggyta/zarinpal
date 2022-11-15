@@ -1,6 +1,19 @@
 @import './mixins';
 @import './variables';
 
+#products-button {
+    @include dropMenus;
+    position: relative;
+    cursor: pointer;  
+}
+
+div[role='menu'] {
+    display: none;
+}
+div[role='menu'].products-menu {
+    display: block; 
+}
+
 .link-list {
     @include marginNav;
     @include fontDesign (0.9rem, $font-default);
@@ -12,9 +25,9 @@
     margin: -6px 2px;
 }
 
-.visible {
+.products-menu {
     width:115px;
     background-color: $light-color;
     @include dropMeuBorder;
-    @include dropDownPosition (absolute, 76px, 135px);
+    @include dropDownPosition (absolute, 76px, 520px);
 }

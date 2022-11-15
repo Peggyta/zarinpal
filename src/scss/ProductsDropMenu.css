@@ -24,6 +24,21 @@
   src: url("../fonts/YekanBakhMedium.woff") format("woff");
 }
 
+#products-button {
+  border: none;
+  background-color: unset;
+  position: relative;
+  cursor: pointer;
+}
+
+div[role='menu'] {
+  display: none;
+}
+
+div[role='menu'].products-menu {
+  display: block;
+}
+
 .link-list {
   margin: 0 15px;
   font-size: 0.9rem;
@@ -36,13 +51,13 @@
   margin: -6px 2px;
 }
 
-.visible {
+.products-menu {
   width: 115px;
   background-color: #ffffff;
   border-top: 5px solid #f8e88b;
   border-radius: 10px;
   position: absolute;
   top: 76px;
-  left: 135px;
+  left: 520px;
 }
 /*# sourceMappingURL=ProductsDropMenu.css.map */
