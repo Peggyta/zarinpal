@@ -18,6 +18,11 @@
     background-color: unset;
 }
 
+@mixin  dropDownIcon {
+    display: inline-block;
+    margin: -6px 2px;
+}
+
 @mixin dropMeuBorder {
     border-top: 5px solid #f8e88b;
     border-radius: 10px;

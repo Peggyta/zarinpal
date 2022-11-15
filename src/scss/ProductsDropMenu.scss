@@ -21,13 +21,32 @@ div[role='menu'].products-menu {
 }
 
 .drop-down-sign {
-    display: inline-block;
-    margin: -6px 2px;
+    @include dropDownIcon;
 }
 
 .products-menu {
-    width:115px;
+    display: flex;
+    justify-content: flex-start;
+    width:345px;
     background-color: $light-color;
     @include dropMeuBorder;
-    @include dropDownPosition (absolute, 76px, 520px);
+    @include dropDownPosition (absolute, 76px, 414px);
+    padding: 10px 0;
+}
+
+.products-menu a {
+    color: $dark-color;
+    font-family: $font-medium;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin: 8px;
+}
+
+.products-menu a p:first-child {
+    font-size: 0.95rem;
+}
+
+.products-menu a p:last-child {
+    font-size: 0.75rem;
 }

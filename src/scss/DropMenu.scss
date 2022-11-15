@@ -36,8 +36,7 @@ div[role='menu'].visible {
 }
 
 .drop-down-sign {
-    display: inline-block;
-    margin: -6px 2px;
+    @include dropDownIcon;
 }
 
 @include responsive (M) {
