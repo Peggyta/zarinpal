@@ -54,6 +54,19 @@
   line-height: 2.4rem;
 }
 
+.button-container {
+  margin-top: 55px;
+}
+
+.button-container .register {
+  border: none;
+  font-family: "ireanyekanwebmedium";
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .banner-img {
   width: 500px;
 }
