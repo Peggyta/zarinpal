@@ -15,9 +15,13 @@
         h3 {
             @include fontDesign (2rem, $font-heavy);
         }
+        p {
+            @include fontDesign (1.15rem, $font-default);
+            margin: 25px 0;
+            line-height: 2.4rem;
+        }
     }
 }
-
 
 
 .banner-img {

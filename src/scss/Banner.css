@@ -47,6 +47,13 @@
   font-family: "YekanBakhHeavy";
 }
 
+.banner .banner-content p {
+  font-size: 1.15rem;
+  font-family: "ireanyekanwebmedium";
+  margin: 25px 0;
+  line-height: 2.4rem;
+}
+
 .banner-img {
   width: 500px;
 }
