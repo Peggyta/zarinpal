@@ -7,7 +7,7 @@
     justify-content: space-between;
     background-image: linear-gradient(135deg, #21254e, #2b4a83);
     padding: 124px 60px 80px;
-    margin: auto;
+    margin: 10px auto;
     border-radius: 20px;
 
     .banner-content {
@@ -57,5 +57,7 @@
     }
     .go-down-icon {
         position: relative;
+        font-size: 25px;
+        bottom: 64px;
     }
 }
