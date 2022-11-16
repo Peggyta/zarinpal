@@ -115,4 +115,15 @@
   bottom: 64px;
   font-size: 25px;
 }
+
+/*Responsive*/
+@media (max-width: 1200px) {
+  .banner {
+    width: 860px;
+    padding: 60px 40px 120px;
+  }
+  .banner-img img {
+    width: 420px;
+  }
+}
 /*# sourceMappingURL=Banner.css.map */

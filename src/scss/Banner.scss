@@ -59,3 +59,14 @@
         font-size: 25px;
     }
 }
+
+/*Responsive*/
+@include responsive (L) {
+    .banner {
+        width: 860px;
+        padding: 60px 40px 120px;
+    }
+    .banner-img img {
+        width: 420px;
+    }
+}
