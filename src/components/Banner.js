@@ -19,7 +19,11 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='banner-img'>
-                    
+                    <img src={bannerImg} alt='banner' />
+                </div>
+                <div className='go-down-button'>
+                    <div></div>
+                    <FiChevronDown />
                 </div>
             </div>
         </main>
