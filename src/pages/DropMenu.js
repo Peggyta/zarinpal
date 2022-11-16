@@ -1,7 +1,7 @@
 import React from 'react';
 import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 import { FiChevronDown } from 'react-icons/fi';
-import '../scss/Navbar.css';
+import '../scss/DropMenu.css';
 
 const DropMenu = () => {
     const { buttonProps, itemProps, isOpen } = useDropdownMenu(5);
