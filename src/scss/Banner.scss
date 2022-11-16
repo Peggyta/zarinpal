@@ -9,4 +9,17 @@
     padding: 124px 60px 80px;
     margin: 20px auto;
     border-radius: 20px;
+
+    .banner-content {
+        color: $light-color;
+        h3 {
+            @include fontDesign (2rem, $font-heavy);
+        }
+    }
+}
+
+
+
+.banner-img {
+    width: 500px;
 }

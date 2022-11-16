@@ -37,4 +37,17 @@
   margin: 20px auto;
   border-radius: 20px;
 }
+
+.banner .banner-content {
+  color: #ffffff;
+}
+
+.banner .banner-content h3 {
+  font-size: 2rem;
+  font-family: "YekanBakhHeavy";
+}
+
+.banner-img {
+  width: 500px;
+}
 /*# sourceMappingURL=Banner.css.map */
