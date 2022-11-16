@@ -26,7 +26,16 @@
 .button-container {
     margin-top: 55px;
     .register {
-        @include buttonStyling;
+        @include buttonStyling {
+            background-color: $register-button;
+            margin-left: 10px;
+        };
+    }
+    .login {
+        @include buttonStyling {
+            background-color: $login-button;
+            color: $light-color;
+        }
     }
 }
 
