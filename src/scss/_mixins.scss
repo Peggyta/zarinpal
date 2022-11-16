@@ -44,6 +44,11 @@
     @content;
 }
 
+@mixin goDownBtn ($bottom) {
+    position: relative;
+    bottom: $bottom;
+}
+
 /*Responsive*/
 @mixin responsive ($width) {
     
