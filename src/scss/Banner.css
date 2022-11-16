@@ -84,4 +84,33 @@
 .banner-img {
   width: 500px;
 }
+
+.go-down-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 37px;
+  width: 100%;
+}
+
+.go-down-button div {
+  background-image: url(../images/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+
+.go-down-button .go-down-icon {
+  position: relative;
+}
 /*# sourceMappingURL=Banner.css.map */

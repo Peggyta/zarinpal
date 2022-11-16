@@ -43,3 +43,19 @@
 .banner-img {
     width: 500px;
 }
+
+.go-down-button {
+    @include flexStyling (flex, center, center);
+    flex-direction: column;
+    position: relative;
+    bottom: 37px;
+    width: 100%;
+    div {
+        background-image: url(../images/arrowbottom.svg);
+        width: 164px;
+        height: 78px; 
+    }
+    .go-down-icon {
+        position: relative;
+    }
+}
