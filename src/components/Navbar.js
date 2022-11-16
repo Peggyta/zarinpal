@@ -1,21 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
+import DropMenu from '../pages/DropMenu';
 //Image & Icons
 import logo from '../images/logo-white.svg';
 import { FiAlignJustify } from 'react-icons/fi';
-import { FiChevronDown } from 'react-icons/fi';
 import { FiX } from 'react-icons/fi';
 //Style
 import '../scss/Navbar.css';
+import ProductsDropMenu from '../pages/ProductsDropMenu';
+
 
 const Navbar = ({isClicked, setIsClicked}) => {
-    const { buttonProps, itemProps, isOpen } = useDropdownMenu(2);
     const clickHandler = () => {
         setIsClicked(!isClicked)
     };
     return (
-        <>
        <header>
             <div className='logo-container'>
                 <NavLink to="/">
@@ -25,10 +24,7 @@ const Navbar = ({isClicked, setIsClicked}) => {
             <nav>
                 <ul className='navbar-wrapper'>
                     <li>
-                        <NavLink className='link-list' to="/products">
-                            محصولات
-                            <FiChevronDown className='drop-down-sign' />
-                        </NavLink>
+                        <ProductsDropMenu />
                     </li>
                     <li>
                         <NavLink className='link-list' to="/price">
@@ -46,18 +42,7 @@ const Navbar = ({isClicked, setIsClicked}) => {
                         </NavLink>
                     </li>
                     <li>
-                        <button className='link-list' id='dropDown-menu' {...buttonProps}>بیش‌تر
-                            <FiChevronDown className='drop-down-sign' />
-                        </button>
-                        <div className={isOpen ? 'visible' : ''} id='drop-items' role='menu'>
-                            <ul>
-                                <li className='drop-list-items'><a href='#'>وبلاگ</a></li>
-                                <li className='drop-list-items'><a href='#'>دریافت شماره شبا</a></li>
-                                <li className='drop-list-items'><a href='#'>سوالات متداول</a></li>
-                                <li className='drop-list-items'><a href='#'>اپلیکیشن</a></li>
-                                <li className='drop-list-items'><a href='#'>زرین‌بین</a></li>
-                            </ul>
-                        </div>
+                        <DropMenu />
                     </li>
                     <li>
                         <NavLink className='link-list' to="/my-zarin-pal">
@@ -71,9 +56,7 @@ const Navbar = ({isClicked, setIsClicked}) => {
                 (<FiAlignJustify onClick={clickHandler} className='nav-icon' /> ) : 
                 (<FiX onClick={clickHandler} className='nav-icon' /> )}
             </div>
-       </header>
-            
-        </>
+       </header>        
     );
 };
 
