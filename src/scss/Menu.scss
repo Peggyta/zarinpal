@@ -1,6 +1,11 @@
 @import './mixins';
 @import './variables';
 
+.hambur-menu {
+    position: fixed;
+    top:60px;
+}
+
 @include responsive (XL) {
     .hambur-menu {
         display: none;

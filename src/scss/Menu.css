@@ -24,6 +24,11 @@
   src: url("../fonts/YekanBakhMedium.woff") format("woff");
 }
 
+.hambur-menu {
+  position: fixed;
+  top: 60px;
+}
+
 @media (max-width: 1400px) {
   .hambur-menu {
     display: none;
