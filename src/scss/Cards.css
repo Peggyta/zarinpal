@@ -85,7 +85,7 @@
   cursor: pointer;
   background-color: #ffd900;
   font-size: 0.9rem;
-  padding: 10px 14px;
+  padding: 8px 14px;
   margin-left: 10px;
 }
 
@@ -96,7 +96,6 @@
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  position: relative;
   border: none;
   font-family: "ireanyekanwebmedium";
   border-radius: 10px;
@@ -105,14 +104,13 @@
   cursor: pointer;
   background-color: rgba(232, 239, 254, 0.6);
   font-size: 0.9rem;
-  padding: 10px 14px;
+  padding: 8px 24px;
   color: #28457b;
 }
 
 .arrow-section {
-  position: absolute;
-  left: -4px;
-  bottom: 12px;
+  margin-top: 4px;
+  margin-right: 7px;
   font-size: 0.9rem;
 }
 /*# sourceMappingURL=Cards.css.map */
