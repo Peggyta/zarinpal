@@ -58,3 +58,13 @@
     margin-right: 7px;
     font-size: 0.9rem;
 }
+/*Responsive*/
+@include responsive (L) {
+    .card-section {
+        width: 940px;
+        margin-top: 50px;
+    }
+    .card-container {
+        width: 460px;
+    }
+}
