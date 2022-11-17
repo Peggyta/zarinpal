@@ -75,4 +75,10 @@
             @content;
         }
     }
+
+    @else if ($width == XS) {
+        @media (max-width: 575px) {
+           @content;
+       }
+   }
 }

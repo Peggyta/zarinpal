@@ -11,14 +11,14 @@
     border-radius: 20px;
 
     .banner-content {
-        width: 700px;
+        width: 650px;
         color: $light-color;
         h3 {
             @include fontDesign (2rem, $font-heavy);
         }
         p {
-            @include fontDesign (1.15rem, $font-default);
-            margin: 25px 0;
+            @include fontDesign (1rem, $font-default);
+            margin-top: 20px;
             line-height: 2.4rem;
         }
     }
@@ -92,7 +92,7 @@
     }
 
     .button-container {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 
@@ -100,5 +100,15 @@
     .banner {
         margin-left: 8px;
         margin-right: 8px;
+    }
+}
+
+@include responsive (XS) {
+    .banner-content {
+        text-align-last: unset;
+        text-align: center;
+        h3 {
+            text-align: right;
+        }
     }
 }

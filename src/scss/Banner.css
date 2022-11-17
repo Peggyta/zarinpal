@@ -39,7 +39,7 @@
 }
 
 .banner .banner-content {
-  width: 700px;
+  width: 650px;
   color: #ffffff;
 }
 
@@ -49,9 +49,9 @@
 }
 
 .banner .banner-content p {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-family: "ireanyekanwebmedium";
-  margin: 25px 0;
+  margin-top: 20px;
   line-height: 2.4rem;
 }
 
@@ -146,7 +146,7 @@
     text-align-last: center;
   }
   .button-container {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -154,6 +154,16 @@
   .banner {
     margin-left: 8px;
     margin-right: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-content {
+    text-align-last: unset;
+    text-align: center;
+  }
+  .banner-content h3 {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=Banner.css.map */
