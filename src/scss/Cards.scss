@@ -11,3 +11,19 @@
     width: 430px;
     height: 440px;
 }
+
+.card-container {
+    width: 530px;
+    h2 {
+        color: $section-title-color;
+        @include fontDesign (1.4rem, $font-medium);
+    }
+    h3 {
+        color: $primary-color;
+        @include fontDesign (2rem, $font-heavy);
+    }
+    p {
+        color: $primary-color;
+        @include fontDesign (1rem, $font-medium);
+    }
+}

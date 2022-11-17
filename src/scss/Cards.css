@@ -42,4 +42,26 @@
   width: 430px;
   height: 440px;
 }
+
+.card-container {
+  width: 530px;
+}
+
+.card-container h2 {
+  color: #747480;
+  font-size: 1.4rem;
+  font-family: "YekanBakhMedium";
+}
+
+.card-container h3 {
+  color: #303030;
+  font-size: 2rem;
+  font-family: "YekanBakhHeavy";
+}
+
+.card-container p {
+  color: #303030;
+  font-size: 1rem;
+  font-family: "YekanBakhMedium";
+}
 /*# sourceMappingURL=Cards.css.map */
