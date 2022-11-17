@@ -1,4 +1,6 @@
 import React from 'react';
+//Components
+import Cards from './Cards';
 //Style
 import '../scss/Banner.css';
 //Image & Icons
@@ -7,6 +9,7 @@ import { FiChevronDown } from 'react-icons/fi';
 
 const Banner = () => {
     return (
+        <>
         <main>
             <div className='banner'>
                 <div className='banner-content'>
@@ -28,6 +31,9 @@ const Banner = () => {
                 <FiChevronDown className='go-down-icon' />
             </div>
         </main>
+            <Cards />
+        </>
+        
     );
 };
 
