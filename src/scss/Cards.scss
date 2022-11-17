@@ -1,0 +1,13 @@
+@import './mixins';
+@import './variables';
+
+.card-section {
+    width: 1170px;
+    margin: auto;
+    @include flexStyling (flex, space-between, flex-start);
+}
+
+.img-card-container img {
+    width: 430px;
+    height: 440px;
+}
