@@ -51,7 +51,7 @@ const Cards = () => {
                     <img src={cardTwo} alt='card image' />
                 </div>
             </section>
-            <section className='card-section'>
+            <section className='card-section' id='card-num-three'>
                 <div className='img-card-container-three'>
                     <img src={cardThree} alt='card image' />
                 </div>
@@ -60,7 +60,8 @@ const Cards = () => {
                     <h3>طلایی‌ترین کارتِ بانکی</h3>
                     <p>
                     زرین‌‌کارت یک کارتِ بانکی عضو شبکه‌‌ی شتاب
-                     و متصل به یک حساب بانکی است که از تمام ویژگی‌‌ها و امکانات یک حساب بانکی تمام عیار برخوردار است. زرین‌‌کارت این امکان را برای کاربران خود
+                     و متصل به یک حساب بانکی است که از تمام ویژگی‌‌ها و امکانات یک حساب بانکی تمام عیار
+                      برخوردار است. زرین‌‌کارت این امکان را برای کاربران خود
                       فراهم می‌‌سازد تا از تعرفه‌‌ی کارمزد کم‌‌تر در روزهای عادی
                       و کارمزد رایگان در سه‌‌شنبه‌‌های طلاییِ زرین‌‌پال بهره‌‌مند شوند.
                     </p>
@@ -71,6 +72,27 @@ const Cards = () => {
                     </button>
                 </div>
             </div>
+            </section>
+            <section className='card-section'>
+                <div className='card-container'>
+                    <h2>تسهیم</h2>
+                    <h3>درگاه پرداخت اشتراکی</h3>
+                    <p>
+                    تسهیم بهترین روش برای مدیریت مالی کسب‌
+                     و کارهای شراکتی است که به واسطه‌ی آن، درآمد حاصل از فروش محصولات یا
+                      خدمات، در سهم‌های ثابت یا متغیر میان شرکای تجاری تقسیم
+                      شده و به صورت جداگانه به حساب هر شخص واریز می‌‌شود.
+                    </p>
+                    <div className='card-buttons'>
+                        <button className='payment-button'>ساخت درگاه پرداخت</button>
+                        <button className='know-more-button'>
+                        بیش‌تر بدانید<BiArrowBack className='arrow-section' />
+                        </button>
+                    </div>
+                </div>
+                <div className='img-card-container-four'>
+                    <img src={cardFour} alt='card image' />
+                </div>
             </section>
         </>
         
