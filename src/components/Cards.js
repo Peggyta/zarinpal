@@ -47,9 +47,30 @@ const Cards = () => {
                         </button>
                     </div>
                 </div>
-                <div className='img-card-container'>
+                <div className='img-card-container-two'>
                     <img src={cardTwo} alt='card image' />
                 </div>
+            </section>
+            <section className='card-section'>
+                <div className='img-card-container-three'>
+                    <img src={cardThree} alt='card image' />
+                </div>
+                <div className='card-container'>
+                    <h2>زرین‌کارت</h2>
+                    <h3>طلایی‌ترین کارتِ بانکی</h3>
+                    <p>
+                    زرین‌‌کارت یک کارتِ بانکی عضو شبکه‌‌ی شتاب
+                     و متصل به یک حساب بانکی است که از تمام ویژگی‌‌ها و امکانات یک حساب بانکی تمام عیار برخوردار است. زرین‌‌کارت این امکان را برای کاربران خود
+                      فراهم می‌‌سازد تا از تعرفه‌‌ی کارمزد کم‌‌تر در روزهای عادی
+                      و کارمزد رایگان در سه‌‌شنبه‌‌های طلاییِ زرین‌‌پال بهره‌‌مند شوند.
+                    </p>
+                <div className='card-buttons'>
+                    <button className='payment-button'>ساخت درگاه پرداخت</button>
+                    <button className='know-more-button'>
+                    بیش‌تر بدانید<BiArrowBack className='arrow-section' />
+                    </button>
+                </div>
+            </div>
             </section>
         </>
         
