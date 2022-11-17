@@ -50,8 +50,9 @@
 
 .card-container h2 {
   color: #747480;
-  font-size: 1.4rem;
-  font-family: "YekanBakhMedium";
+  font-size: 1.5rem;
+  font-family: "ireanyekanwebmedium";
+  font-weight: 200;
 }
 
 .card-container h3 {
@@ -141,6 +142,7 @@
     text-align: right;
     width: auto;
     margin: 0 40px;
+    line-height: 40px;
   }
   .card-container h3 {
     font-size: 1.6rem;
@@ -164,6 +166,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .img-card-container {
+    display: none;
+  }
+  .card-container {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=Cards.css.map */

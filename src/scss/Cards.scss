@@ -17,7 +17,8 @@
     margin: 30px 0;
     h2 {
         color: $section-title-color;
-        @include fontDesign (1.4rem, $font-medium);
+        @include fontDesign (1.5rem, $font-default);
+        font-weight: 200;
     }
     h3 {
         color: $primary-color;
@@ -75,13 +76,13 @@
         width: auto;
         flex-direction: column;
         align-items: center;
-        
     }
     
     .card-container {
         text-align: right;
         width: auto;
         margin: 0 40px;
+        line-height: 40px;
         h3 {
             @include fontDesign (1.6rem, $font-heavy);
             margin-bottom: 10px;
@@ -100,5 +101,14 @@
     }
     .card-buttons {
         justify-content: center;
+    }
+}
+
+@include responsive (XS) {
+    .img-card-container {
+        display: none;
+    }
+    .card-container {
+        margin-top: 10px;
     }
 }
