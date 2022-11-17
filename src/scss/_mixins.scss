@@ -49,6 +49,11 @@
     bottom: $bottom;
 }
 
+@mixin imgSection ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 /*Responsive*/
 @mixin responsive ($width) {
     

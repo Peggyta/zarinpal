@@ -8,8 +8,11 @@
 }
 
 .img-card-container img {
-    width: 430px;
-    height: 440px;
+    @include imgSection (430px, 440px);
+}
+
+.img-card-container-two img {
+    @include imgSection (580px, 470px);
 }
 
 .card-container {
@@ -91,6 +94,9 @@
     .card-buttons {
         margin-bottom: 30px;
     }
+    .img-card-container-two img {
+        @include imgSection (520px, 410px);
+    }
 }
 
 @include responsive (S) {
@@ -102,6 +108,9 @@
     .card-buttons {
         justify-content: center;
     }
+    .img-card-container-two img {
+        @include imgSection (460px, 330px);
+    }
 }
 
 @include responsive (XS) {
@@ -110,5 +119,8 @@
     }
     .card-container {
         margin-top: 10px;
+    }
+    .img-card-container-two {
+        display: none;
     }
 }
