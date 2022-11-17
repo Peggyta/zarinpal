@@ -142,8 +142,28 @@
     width: auto;
     margin: 0 40px;
   }
+  .card-container h3 {
+    font-size: 1.6rem;
+    font-family: "YekanBakhHeavy";
+    margin-bottom: 10px;
+  }
   .card-buttons {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .card-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=Cards.css.map */

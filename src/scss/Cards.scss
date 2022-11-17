@@ -82,8 +82,23 @@
         text-align: right;
         width: auto;
         margin: 0 40px;
+        h3 {
+            @include fontDesign (1.6rem, $font-heavy);
+            margin-bottom: 10px;
+        }
     }
     .card-buttons {
         margin-bottom: 30px;
+    }
+}
+
+@include responsive (S) {
+    .card-container {
+        margin-top: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-buttons {
+        justify-content: center;
     }
 }
