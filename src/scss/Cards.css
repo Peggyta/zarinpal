@@ -52,6 +52,10 @@
   margin-top: 120px;
 }
 
+#card-num-four {
+  margin-top: 130px;
+}
+
 .card-container {
   width: 570px;
   margin: 30px 0;
@@ -137,6 +141,9 @@
     width: 520px;
     height: 410px;
   }
+  #card-num-four {
+    margin-top: 90px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -204,6 +211,12 @@
     display: none;
   }
   .img-card-container-three {
+    display: none;
+  }
+  #card-num-four {
+    margin-top: 10px;
+  }
+  .img-card-container-four {
     display: none;
   }
 }
