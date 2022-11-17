@@ -68,3 +68,22 @@
         width: 460px;
     }
 }
+
+@include responsive (M) {
+    .card-section {
+        margin-top: 10px;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .card-container {
+        text-align: right;
+        width: auto;
+        margin: 0 40px;
+    }
+    .card-buttons {
+        margin-bottom: 30px;
+    }
+}

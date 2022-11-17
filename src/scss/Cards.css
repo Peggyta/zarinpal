@@ -124,4 +124,26 @@
     width: 460px;
   }
 }
+
+@media (max-width: 990px) {
+  .card-section {
+    margin-top: 10px;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-container {
+    text-align: right;
+    width: auto;
+    margin: 0 40px;
+  }
+  .card-buttons {
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=Cards.css.map */
