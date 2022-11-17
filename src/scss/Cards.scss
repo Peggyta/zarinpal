@@ -3,7 +3,7 @@
 
 .card-section {
     width: 1170px;
-    margin: auto;
+    margin: 30px auto;
     @include flexStyling (flex, space-between, flex-start);
 }
 
@@ -13,6 +13,10 @@
 
 .img-card-container-two img {
     @include imgSection (580px, 470px);
+}
+
+#card-num-three {
+    margin-top: 120px;
 }
 
 .card-container {
@@ -71,6 +75,9 @@
     .card-container {
         width: 460px;
     }
+    .img-card-container-two img {
+        @include imgSection (520px, 410px);
+    }
 }
 
 @include responsive (M) {
@@ -97,6 +104,9 @@
     .img-card-container-two img {
         @include imgSection (520px, 410px);
     }
+    #card-num-three {
+        margin-top: 50px;
+    }
 }
 
 @include responsive (S) {
@@ -121,6 +131,9 @@
         margin-top: 10px;
     }
     .img-card-container-two {
+        display: none;
+    }
+    .img-card-container-three {
         display: none;
     }
 }

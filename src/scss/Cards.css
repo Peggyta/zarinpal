@@ -26,7 +26,7 @@
 
 .card-section {
   width: 1170px;
-  margin: auto;
+  margin: 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,6 +46,10 @@
 .img-card-container-two img {
   width: 580px;
   height: 470px;
+}
+
+#card-num-three {
+  margin-top: 120px;
 }
 
 .card-container {
@@ -129,6 +133,10 @@
   .card-container {
     width: 460px;
   }
+  .img-card-container-two img {
+    width: 520px;
+    height: 410px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -161,6 +169,9 @@
     width: 520px;
     height: 410px;
   }
+  #card-num-three {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -190,6 +201,9 @@
     margin-top: 10px;
   }
   .img-card-container-two {
+    display: none;
+  }
+  .img-card-container-three {
     display: none;
   }
 }
