@@ -117,6 +117,9 @@ header ul .link-list {
     padding: 10px 0;
     width: auto;
     height: 40px;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    background-color: #ffffff;
   }
   header nav {
     display: none;

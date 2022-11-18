@@ -80,6 +80,8 @@ header {
         padding: 10px 0;
         width: auto;
         height: 40px;
+        backdrop-filter: none;
+        background-color: $light-color;
         
         nav {
             display: none;
