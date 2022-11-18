@@ -1,6 +1,7 @@
 import React from 'react';
 //Components
 import Cards from './Cards';
+import Features from './Features';
 //Style
 import '../scss/Banner.css';
 //Image & Icons
@@ -32,6 +33,7 @@ const Banner = () => {
             </div>
         </main>
             <Cards />
+            <Features />
         </>
         
     );

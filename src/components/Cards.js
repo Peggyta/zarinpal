@@ -73,7 +73,7 @@ const Cards = () => {
                 </div>
             </div>
             </section>
-            <section className='card-section'>
+            <section className='card-section' id='card-num-four'>
                 <div className='card-container'>
                     <h2>تسهیم</h2>
                     <h3>درگاه پرداخت اشتراکی</h3>
@@ -93,6 +93,28 @@ const Cards = () => {
                 <div className='img-card-container-four'>
                     <img src={cardFour} alt='card image' />
                 </div>
+            </section>
+            <section className='card-section' id='card-num-three'>
+                <div className='img-card-container-five'>
+                    <img src={cardFive} alt='card image' />
+                </div>
+                <div className='card-container' id='card-num-five'>
+                    <h2>زرین‌پلاس</h2>
+                    <h3>ابزار هوشمند سوددهی</h3>
+                    <p>
+                    زرین‌پلاس محصولی از زرین‌پال، فرصتی فراهم کرده
+                     است تا کسب و کارها در هر اندازه و دسته‌بندی شغلی، با در دست داشتن
+                      ابزاری قدرتمند برای وفادارسازی مشتریان و افزایش فروش محصولات خود،
+                      بتوانند کسب و کار خود را به بهترین شکل توسعه و گسترش دهند
+                      و جایگاه برترین فروشگاه منطقه را به خود اختصاص دهند.
+                    </p>
+                <div className='card-buttons'>
+                    <button className='payment-button'>ساخت درگاه پرداخت</button>
+                    <button className='know-more-button'>
+                    بیش‌تر بدانید<BiArrowBack className='arrow-section' />
+                    </button>
+                </div>
+            </div>
             </section>
         </>
         
