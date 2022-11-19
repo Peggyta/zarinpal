@@ -34,3 +34,34 @@
         
     }
 }
+
+@include responsive (M) {
+    .start-box {
+        width: 80%;
+        
+    }
+}
+
+@include responsive (S) {
+    .start-box {
+        width: 80%;
+        h4 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }   
+    }
+}
+
+@include responsive (XS) {
+    .start-box {
+        width: 75%;
+        h4 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1rem;
+        }      
+    }
+}
