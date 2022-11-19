@@ -54,7 +54,7 @@
 }
 
 .feature-list {
-  width: 60%;
+  width: 58%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -92,5 +92,21 @@
   padding: 8px;
   border-radius: 13px;
   margin-left: 15px;
+}
+
+.first-feature {
+  border-left: 1px solid #dfe1e4;
+}
+
+.second-feature {
+  border-bottom: 1px solid #dfe1e4;
+}
+
+.third-feature {
+  border-top: 1px solid #dfe1e4;
+}
+
+.fourth-feature {
+  border-right: 1px solid #dfe1e4;
 }
 /*# sourceMappingURL=Features.css.map */

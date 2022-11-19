@@ -23,7 +23,7 @@
 }
 
 .feature-list {
-    width: 60%;
+    width: 58%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
@@ -54,4 +54,20 @@
     padding: 8px;
     border-radius: 13px;
     margin-left: 15px;
+}
+
+.first-feature {
+    border-left: 1px solid $border-color;
+}
+
+.second-feature {
+    border-bottom: 1px solid $border-color;
+}
+
+.third-feature {
+    border-top: 1px solid $border-color;
+}
+
+.fourth-feature {
+    border-right: 1px solid $border-color;
 }
