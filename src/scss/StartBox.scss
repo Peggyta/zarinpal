@@ -10,7 +10,7 @@
     background-color: $light-color;
     border: 1px solid $border-color;
     border-radius: 12px;
-    padding: 60px;
+    padding: 50px;
     h4 {
         @include fontDesign (1.8rem, $font-heavy);
         color: $primary-color;
@@ -26,4 +26,11 @@
     @include buttonStyling;
     background-color: $register-button;
     font-size: 0.9rem;
+}
+
+@include responsive (L) {
+    .start-box {
+        width: 840px;
+        
+    }
 }

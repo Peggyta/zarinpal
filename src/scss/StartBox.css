@@ -40,7 +40,7 @@
   background-color: #ffffff;
   border: 1px solid #d2d5da;
   border-radius: 12px;
-  padding: 60px;
+  padding: 50px;
 }
 
 .start-box h4 {
@@ -65,5 +65,11 @@
   cursor: pointer;
   background-color: #ffd900;
   font-size: 0.9rem;
+}
+
+@media (max-width: 1200px) {
+  .start-box {
+    width: 840px;
+  }
 }
 /*# sourceMappingURL=StartBox.css.map */
