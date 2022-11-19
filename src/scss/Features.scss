@@ -11,15 +11,14 @@
 .definition {
     width: 35%;
     margin-top: 40px;
+    color: $primary-color;
     h3 {
         @include fontDesign (2rem, $font-heavy);
-        color: $dark-color;
     }
     p {
         @include fontDesign (0.9rem, $font-default);
-        color: $primary-color;
         margin-top: 40px;
-        line-height: 35px;
+        line-height: 37px;
     }
 }
 
@@ -28,11 +27,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
-    .feature {
+}
 
-        div{
-            display: flex;
-            align-items: center;
+.feature {
+        
+    div{
+        display: flex;
+        align-items: center;
+        h4 {
+            @include fontDesign (1.5rem, $font-heavy);
+            color: $primary-color;
         }
+    }
+    p {
+        color: $primary-color;
+        @include fontDesign (0.9rem, $font-default);
+        line-height: 34px;
+        margin: 20px 0 20px 10px;
     }
 }

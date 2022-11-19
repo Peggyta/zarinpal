@@ -38,20 +38,19 @@
 .definition {
   width: 35%;
   margin-top: 40px;
+  color: #303030;
 }
 
 .definition h3 {
   font-size: 2rem;
   font-family: "YekanBakhHeavy";
-  color: #000000;
 }
 
 .definition p {
   font-size: 0.9rem;
   font-family: "ireanyekanwebmedium";
-  color: #303030;
   margin-top: 40px;
-  line-height: 35px;
+  line-height: 37px;
 }
 
 .feature-list {
@@ -63,12 +62,26 @@
   padding: 30px;
 }
 
-.feature-list .feature div {
+.feature div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.feature div h4 {
+  font-size: 1.5rem;
+  font-family: "YekanBakhHeavy";
+  color: #303030;
+}
+
+.feature p {
+  color: #303030;
+  font-size: 0.9rem;
+  font-family: "ireanyekanwebmedium";
+  line-height: 34px;
+  margin: 20px 0 20px 10px;
 }
 /*# sourceMappingURL=Features.css.map */
