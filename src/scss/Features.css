@@ -175,6 +175,9 @@
     margin-top: 80px;
     padding: 0;
   }
+  .features .feature-list {
+    margin-top: 10px;
+  }
   .feature {
     padding: 0;
   }
@@ -190,6 +193,31 @@
     text-align: justify;
     width: 80%;
     margin: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .features {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features .definition {
+    margin-bottom: 0;
+  }
+  .features .definition h3 {
+    font-size: 1.5rem;
+  }
+  .feature-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .feature {
+    width: 80%;
+    padding: 0 45px;
+  }
+  .feature div h4 {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=Features.css.map */

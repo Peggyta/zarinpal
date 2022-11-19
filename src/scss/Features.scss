@@ -137,6 +137,9 @@
     .features {
         margin-top: 80px;
         padding: 0;
+        .feature-list {
+            margin-top: 10px;
+        }
     }
 
     .feature {
@@ -159,4 +162,27 @@
         }
     }
     
+}
+
+@include responsive (XS) {
+    .features {
+        align-items: center;
+        .definition {
+            margin-bottom: 0;
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+    .feature {
+        width: 80%;
+        padding: 0 45px;
+        div h4 {
+            font-size: 1.2rem;
+        }
+    }
 }
