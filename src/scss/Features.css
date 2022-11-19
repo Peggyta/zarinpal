@@ -34,4 +34,41 @@
   width: 1170px;
   margin: auto;
 }
+
+.definition {
+  width: 35%;
+  margin-top: 40px;
+}
+
+.definition h3 {
+  font-size: 2rem;
+  font-family: "YekanBakhHeavy";
+  color: #000000;
+}
+
+.definition p {
+  font-size: 0.9rem;
+  font-family: "ireanyekanwebmedium";
+  color: #303030;
+  margin-top: 40px;
+  line-height: 35px;
+}
+
+.feature-list {
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+
+.feature-list .feature div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=Features.css.map */

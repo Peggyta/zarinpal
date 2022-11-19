@@ -7,3 +7,32 @@
     width: 1170px;
     margin: auto;
 }
+
+.definition {
+    width: 35%;
+    margin-top: 40px;
+    h3 {
+        @include fontDesign (2rem, $font-heavy);
+        color: $dark-color;
+    }
+    p {
+        @include fontDesign (0.9rem, $font-default);
+        color: $primary-color;
+        margin-top: 40px;
+        line-height: 35px;
+    }
+}
+
+.feature-list {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    .feature {
+
+        div{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
