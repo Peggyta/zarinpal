@@ -132,3 +132,31 @@
     }
     
 }
+
+@include responsive (S) {
+    .features {
+        margin-top: 80px;
+        padding: 0;
+    }
+
+    .feature {
+        padding: 0;
+        p {
+            text-align: justify;
+            margin-left: 20px;
+        }
+    }
+
+    .definition {
+        h3 {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        p {
+            text-align: justify;
+            width: 80%;
+            margin: auto;
+        }
+    }
+    
+}

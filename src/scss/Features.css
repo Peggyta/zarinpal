@@ -169,4 +169,27 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .features {
+    margin-top: 80px;
+    padding: 0;
+  }
+  .feature {
+    padding: 0;
+  }
+  .feature p {
+    text-align: justify;
+    margin-left: 20px;
+  }
+  .definition h3 {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .definition p {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=Features.css.map */
