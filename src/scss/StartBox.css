@@ -1,0 +1,69 @@
+/*Responsive*/
+@font-face {
+  font-family: 'ireanyekanwebmedium';
+  src: url("../fonts/iranyekanwebmedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ireanyekanwebregular';
+  src: url("../fonts/iranyekanwebregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhBold';
+  src: url("../fonts/YekanBakhBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhHeavy';
+  src: url("../fonts/YekanBakhHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhMedium';
+  src: url("../fonts/YekanBakhMedium.woff") format("woff");
+}
+
+.start-box {
+  width: 1050px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #d2d5da;
+  border-radius: 12px;
+  padding: 60px;
+}
+
+.start-box h4 {
+  font-size: 1.8rem;
+  font-family: "YekanBakhHeavy";
+  color: #303030;
+}
+
+.start-box p {
+  font-size: 1.3rem;
+  font-family: "YekanBakhMedium";
+  margin: 7px 0 15px 0;
+  color: #747480;
+}
+
+.start-button {
+  border: none;
+  font-family: "ireanyekanwebmedium";
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ffd900;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=StartBox.css.map */

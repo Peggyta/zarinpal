@@ -92,7 +92,7 @@
 }
 
 .feature-icon {
-  background-color: rgba(225, 234, 252, 0.6);
+  background-color: rgba(216, 223, 239, 0.6);
   color: #28457b;
   font-size: 40px;
   padding: 8px;
@@ -101,19 +101,19 @@
 }
 
 .first-feature {
-  border-left: 1px solid #dfe1e4;
+  border-left: 1px solid #d2d5da;
 }
 
 .second-feature {
-  border-bottom: 1px solid #dfe1e4;
+  border-bottom: 1px solid #d2d5da;
 }
 
 .third-feature {
-  border-top: 1px solid #dfe1e4;
+  border-top: 1px solid #d2d5da;
 }
 
 .fourth-feature {
-  border-right: 1px solid #dfe1e4;
+  border-right: 1px solid #d2d5da;
 }
 
 @media (max-width: 1200px) {
