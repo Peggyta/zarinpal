@@ -1,0 +1,9 @@
+@import './mixins';
+@import './variables';
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+}
