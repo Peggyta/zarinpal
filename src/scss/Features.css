@@ -149,4 +149,24 @@
     border: none;
   }
 }
+
+@media (max-width: 990px) {
+  .features {
+    width: auto;
+    padding: 0 35px;
+  }
+  .features .feature-list {
+    margin-top: 60px;
+  }
+  .feature p {
+    margin-left: 0;
+  }
+  .definition h3 {
+    font-size: 1.7rem;
+    font-family: "YekanBakhHeavy";
+  }
+  .definition p {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=Features.css.map */

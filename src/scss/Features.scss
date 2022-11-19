@@ -106,3 +106,29 @@
         border: none;
     }
 }
+
+@include responsive (M) {
+    .features {
+        width: auto;
+        padding: 0 35px;
+        .feature-list {
+            margin-top: 60px;
+        }
+    }
+
+    .feature {
+        p {
+            margin-left: 0;
+        }
+    }
+    
+    .definition {
+        h3 {
+            @include fontDesign (1.7rem, $font-heavy);
+        }
+        p {
+            margin-top: 20px;
+        }
+    }
+    
+}
