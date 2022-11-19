@@ -63,7 +63,7 @@
 }
 
 .feature {
-  padding: 18px 50px 10px 0;
+  padding: 19px 50px 10px 8px;
   margin-left: -1px;
   margin-top: -1px;
 }
@@ -114,5 +114,39 @@
 
 .fourth-feature {
   border-right: 1px solid #dfe1e4;
+}
+
+@media (max-width: 1200px) {
+  .features {
+    width: 924px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 8px;
+  }
+  .features .definition {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .features .feature-list {
+    width: 80%;
+    padding: 30px;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 18px 0 20px 50px;
+  }
+  .feature p {
+    margin-left: 70px;
+  }
+  .first-feature,
+  .second-feature,
+  .third-feature,
+  .fourth-feature {
+    border: none;
+  }
 }
 /*# sourceMappingURL=Features.css.map */
