@@ -66,7 +66,7 @@ header ul .link-list {
 }
 
 .navbar-wrapper > li:last-child {
-  background-color: rgba(232, 239, 254, 0.6);
+  background-color: rgba(225, 234, 252, 0.6);
   border-radius: 20px;
   margin: 0 15px;
   font-size: 0.6rem;

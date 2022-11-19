@@ -84,4 +84,13 @@
   line-height: 34px;
   margin: 20px 0 20px 10px;
 }
+
+.feature-icon {
+  background-color: rgba(225, 234, 252, 0.6);
+  color: #28457b;
+  font-size: 40px;
+  padding: 8px;
+  border-radius: 13px;
+  margin-left: 15px;
+}
 /*# sourceMappingURL=Features.css.map */

@@ -46,3 +46,12 @@
         margin: 20px 0 20px 10px;
     }
 }
+
+.feature-icon {
+    background-color: $lastChild-color;
+    color: $secondary-color;
+    font-size: 40px;
+    padding: 8px;
+    border-radius: 13px;
+    margin-left: 15px;
+}
