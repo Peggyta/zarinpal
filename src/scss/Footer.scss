@@ -65,3 +65,18 @@ footer {
         }
     } 
 }
+
+@include responsive (S) {
+    .support-container {
+        background-color: unset;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .support-request {
+        background-color: $footer-color;
+        padding: 10px 15px;
+        margin-top: 7px;
+        border-radius: 37px;
+        font-size: 1rem;
+    }
+}

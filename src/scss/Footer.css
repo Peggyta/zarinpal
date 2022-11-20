@@ -102,4 +102,24 @@ footer {
     margin-bottom: -5px;
   }
 }
+
+@media (max-width: 768px) {
+  .support-container {
+    background-color: unset;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .support-request {
+    background-color: #f6eded;
+    padding: 10px 15px;
+    margin-top: 7px;
+    border-radius: 37px;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */
