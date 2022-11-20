@@ -56,6 +56,11 @@ footer {
 
 .support-section .support-phone {
   color: #28457b;
+  margin-right: 10px;
+}
+
+.support-section .text-divider {
+  padding: 0 20px;
 }
 
 .support-request {
@@ -72,5 +77,11 @@ footer {
 .support-request .support-arrow {
   margin-bottom: -8px;
   margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    width: 940px;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

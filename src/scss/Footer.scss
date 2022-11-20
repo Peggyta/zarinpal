@@ -21,6 +21,10 @@ footer {
     color: $primary-color;
     .support-phone {
         color: $secondary-color;
+        margin-right: 10px;
+    }
+    .text-divider {
+        padding: 0 20px;
     }
 }
 
@@ -36,5 +40,11 @@ footer {
     .support-arrow {
         margin-bottom: -8px;
         margin-right: 10px;
+    }
+}
+
+@include responsive (L) {
+    footer {
+        width: 940px;
     }
 }
