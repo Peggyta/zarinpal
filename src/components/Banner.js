@@ -2,6 +2,8 @@ import React from 'react';
 //Components
 import Cards from './Cards';
 import Features from './Features';
+import StartBox from './StartBox';
+import Footer from './Footer';
 //Style
 import '../scss/Banner.css';
 //Image & Icons
@@ -34,6 +36,8 @@ const Banner = () => {
         </main>
             <Cards />
             <Features />
+            <StartBox />
+            <Footer />
         </>
         
     );

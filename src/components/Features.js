@@ -20,7 +20,7 @@ const Features = () => {
             <div className='feature-list'>
                 <div className='feature first-feature'>
                     <div>
-                        <MdOutlineCheckCircleOutline />
+                        <MdOutlineCheckCircleOutline className='feature-icon' />
                         <h4>ضمانتِ پرداخت</h4>
                     </div>
                     <p>
@@ -32,7 +32,7 @@ const Features = () => {
                 </div>
                 <div className='feature second-feature'>
                     <div>
-                        <MdCallSplit />
+                        <MdCallSplit className='feature-icon' />
                         <h4>مسیردهی هوشمند</h4>
                     </div>
                     <p>
@@ -43,7 +43,7 @@ const Features = () => {
                 </div>     
                 <div className='feature third-feature'>
                     <div>
-                        <MdHeadsetMic />
+                        <MdHeadsetMic className='feature-icon' />
                         <h4>پشتیبانی ۲۴/۷</h4>
                     </div>
                     <p>
@@ -53,7 +53,7 @@ const Features = () => {
                 </div>    
                 <div className='feature fourth-feature'>
                     <div>
-                        <MdHeadsetMic />
+                        <MdHeadsetMic className='feature-icon' />
                         <h4>امنیتِ پرداخت</h4>
                     </div> 
                     <p>
