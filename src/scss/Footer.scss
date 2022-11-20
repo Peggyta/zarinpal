@@ -41,6 +41,22 @@ footer {
     }
 }
 
+/*footer section */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    .shortcut-section {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.shortcut-list {
+    display: flex;
+    flex-direction: column;
+}
+
 @include responsive (L) {
     footer {
         width: 940px;
