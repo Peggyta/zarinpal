@@ -45,6 +45,7 @@ footer {
 .footer-section {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
     .shortcut-section {
         width: 60%;
         display: grid;
@@ -54,7 +55,17 @@ footer {
 
 .shortcut-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
+    h4 {
+        @include fontDesign (1.2rem, $font-heavy);
+        color: $primary-color;
+    }
+    .footer-links {
+        @include fontDesign (0.95rem, $font-default);
+        color: $primary-color;
+        text-decoration: none;
+        padding-top: 20px;
+    }
 }
 
 @include responsive (L) {
