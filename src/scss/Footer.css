@@ -91,7 +91,7 @@ footer {
 }
 
 .footer-section .shortcut-section {
-  width: 60%;
+  width: 68%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -143,6 +143,17 @@ footer {
 .social-media .footer-icons:hover {
   background-color: #ffffff;
   color: #7c8fd4;
+}
+
+.copy-right-footer {
+  margin-top: 50px;
+}
+
+.copy-right-footer p {
+  text-align: center;
+  font-size: 0.85rem;
+  font-family: "ireanyekanwebmedium";
+  color: #303030;
 }
 
 @media (max-width: 1200px) {

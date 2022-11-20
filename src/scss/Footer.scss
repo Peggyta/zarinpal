@@ -47,7 +47,7 @@ footer {
     justify-content: space-between;
     margin-top: 60px;
     .shortcut-section {
-        width: 60%;
+        width: 68%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -83,6 +83,14 @@ footer {
         }
     }
    }
+}
+.copy-right-footer {
+    margin-top: 50px;
+    p {
+        text-align: center;
+        @include fontDesign (0.85rem, $font-default);
+        color: $primary-color;
+    }
 }
 
 @include responsive (L) {
