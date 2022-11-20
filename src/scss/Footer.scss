@@ -3,7 +3,7 @@
 
 footer {
     width: 1150px;
-    margin: 50px auto;
+    margin: 60px auto;
 }
 
 .support-container {
@@ -45,7 +45,7 @@ footer {
 .footer-section {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 60px;
     .shortcut-section {
         width: 60%;
         display: grid;
@@ -74,7 +74,14 @@ footer {
         color: $primary-color;
     }
    .footer-icons {
-    @include footerIcons;
+    @include footerIcons {
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $light-color;
+            color: $hover-color;
+            
+        }
+    }
    }
 }
 

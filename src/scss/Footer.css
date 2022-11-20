@@ -26,7 +26,7 @@
 
 footer {
   width: 1150px;
-  margin: 50px auto;
+  margin: 60px auto;
 }
 
 .support-container {
@@ -87,7 +87,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .footer-section .shortcut-section {
@@ -136,6 +136,13 @@ footer {
   margin-left: 15px;
   padding: 10px;
   border-radius: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.social-media .footer-icons:hover {
+  background-color: #ffffff;
+  color: #7c8fd4;
 }
 
 @media (max-width: 1200px) {
