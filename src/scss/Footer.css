@@ -84,4 +84,22 @@ footer {
     width: 940px;
   }
 }
+
+@media (max-width: 990px) {
+  footer {
+    width: 90%;
+  }
+  .support-container {
+    padding: 0 25px;
+  }
+  .support-section {
+    font-size: 1.2rem;
+  }
+  .support-request {
+    font-size: 1.1rem;
+  }
+  .support-request .support-arrow {
+    margin-bottom: -5px;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

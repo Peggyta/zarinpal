@@ -34,7 +34,6 @@ footer {
     
     .support-link {
         text-decoration: none;
-        
         color: $secondary-color;
     }
     .support-arrow {
@@ -47,4 +46,22 @@ footer {
     footer {
         width: 940px;
     }
+}
+
+@include responsive (M) {
+    footer {
+        width: 90%;
+    }
+    .support-container {
+        padding: 0 25px;
+    }
+    .support-section {
+        font-size: 1.2rem;
+    }
+    .support-request {
+        font-size: 1.1rem;
+        .support-arrow {
+            margin-bottom: -5px;
+        }
+    } 
 }
