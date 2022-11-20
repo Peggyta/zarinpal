@@ -156,6 +156,7 @@ footer {
   color: #303030;
 }
 
+/*Responsive*/
 @media (max-width: 1200px) {
   footer {
     width: 940px;
@@ -212,6 +213,16 @@ footer {
     margin-top: 7px;
     border-radius: 37px;
     font-size: 1rem;
+  }
+  .footer-section .shortcut-section {
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-right: 22px;
+  }
+  .shortcut-list .footer-links {
+    padding-top: 17px;
   }
 }
 
