@@ -11,8 +11,7 @@ footer {
     @include flexStyling (flex, space-between, center);
     height: 70px;
     border-radius: 37px;
-    padding: 0 30px;
-    
+    padding: 0 30px;    
 }
 
 .support-section {
@@ -29,8 +28,8 @@ footer {
 }
 
 .support-request {
-    @include fontDesign (1.3rem, $font-default);
-    font-weight: 600;
+    @include fontDesign (1.3rem, $font-bold);
+    font-weight: 100;
     
     .support-link {
         text-decoration: none;
@@ -79,4 +78,28 @@ footer {
         border-radius: 37px;
         font-size: 1rem;
     }
+}
+
+@include responsive (XS) {
+    footer {
+        border-top: 1px solid $border-color;
+    }
+    .support-container {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .support-section {
+        font-size: 0.9rem;
+        .text-divider {
+            display: none;
+        }
+        .phone-text {
+            margin-right: 20px;
+        }
+    }
+    .support-request {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    } 
 }

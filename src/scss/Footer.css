@@ -65,8 +65,8 @@ footer {
 
 .support-request {
   font-size: 1.3rem;
-  font-family: "ireanyekanwebmedium";
-  font-weight: 600;
+  font-family: "YekanBakhBold";
+  font-weight: 100;
 }
 
 .support-request .support-link {
@@ -120,6 +120,33 @@ footer {
     margin-top: 7px;
     border-radius: 37px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    border-top: 1px solid #d2d5da;
+  }
+  .support-container {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .support-section {
+    font-size: 0.9rem;
+  }
+  .support-section .text-divider {
+    display: none;
+  }
+  .support-section .phone-text {
+    margin-right: 20px;
+  }
+  .support-request {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=Footer.css.map */
