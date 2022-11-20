@@ -68,6 +68,16 @@ footer {
     }
 }
 
+.social-media {
+    h4 {
+        @include fontDesign (1.2rem, $font-heavy);
+        color: $primary-color;
+    }
+   .footer-icons {
+    @include footerIcons;
+   }
+}
+
 @include responsive (L) {
     footer {
         width: 940px;

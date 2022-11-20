@@ -54,6 +54,17 @@
     height: $height;
 }
 
+@mixin footerIcons {
+    background-color: $lastChild-color;
+    color: $secondary-color;
+    font-size: 25px;
+    margin-top: 14px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    @content;
+}
+
 
 /*Responsive*/
 @mixin responsive ($width) {

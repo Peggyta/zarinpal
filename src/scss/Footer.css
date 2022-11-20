@@ -122,6 +122,22 @@ footer {
   padding-top: 20px;
 }
 
+.social-media h4 {
+  font-size: 1.2rem;
+  font-family: "YekanBakhHeavy";
+  color: #303030;
+}
+
+.social-media .footer-icons {
+  background-color: rgba(216, 223, 239, 0.6);
+  color: #28457b;
+  font-size: 25px;
+  margin-top: 14px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   footer {
     width: 940px;
