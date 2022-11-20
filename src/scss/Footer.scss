@@ -114,6 +114,18 @@ footer {
         .support-arrow {
             margin-bottom: -5px;
         }
+    }
+    .footer-section {
+        flex-direction: column;
+        .shortcut-section {
+            width: 95%;
+        }
+    }
+    .social-media {
+        margin-top: 15px;
+        .footer-icons {
+            margin-top: 25px;
+        }
     } 
 }
 

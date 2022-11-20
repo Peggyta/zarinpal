@@ -30,7 +30,7 @@ footer {
 }
 
 .support-container {
-  background-color: #f6eded;
+  background-color: #fff3f3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,6 +178,21 @@ footer {
   .support-request .support-arrow {
     margin-bottom: -5px;
   }
+  .footer-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-section .shortcut-section {
+    width: 95%;
+  }
+  .social-media {
+    margin-top: 15px;
+  }
+  .social-media .footer-icons {
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -192,7 +207,7 @@ footer {
             flex-direction: column;
   }
   .support-request {
-    background-color: #f6eded;
+    background-color: #fff3f3;
     padding: 10px 15px;
     margin-top: 7px;
     border-radius: 37px;
