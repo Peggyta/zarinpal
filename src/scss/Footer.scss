@@ -166,6 +166,7 @@ footer {
         margin-top: 40px;
         flex-direction: column;
     }
+
     .support-section {
         font-size: 0.9rem;
         .text-divider {
@@ -175,9 +176,30 @@ footer {
             margin-right: 20px;
         }
     }
+
     .support-request {
         margin-top: 20px;
         font-size: 0.9rem;
         font-weight: 600;
-    } 
+    }
+    .footer-section {
+        .shortcut-section {
+            gap: 17px;
+        }
+    }
+    .shortcut-list {
+        h4 {
+            font-size: 0.9rem;
+        }
+        .footer-links {
+            font-size: 0.8rem;
+            padding-top: 10px;
+        }
+    }
+    .social-media {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
