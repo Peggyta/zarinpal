@@ -1,0 +1,9 @@
+@import './mixins';
+@import './variables';
+
+footer {
+    width: 1150px;
+    @include flexStyling (flex, space-between, center);
+    margin: 50px auto;
+    background-color: $footer-color;
+}
