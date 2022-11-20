@@ -274,5 +274,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .social-media h4 {
+    font-size: 0.9rem;
+  }
+  .social-media .footer-icons {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

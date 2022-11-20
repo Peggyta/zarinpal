@@ -78,8 +78,7 @@ footer {
         transition: all .3s ease-in-out;
         &:hover {
             background-color: $light-color;
-            color: $hover-color;
-            
+            color: $hover-color;    
         }
     }
    }
@@ -201,5 +200,11 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        h4 {
+            font-size: 0.9rem;
+        }
+        .footer-icons {
+            font-size: 15px;
+        }
     }
 }
