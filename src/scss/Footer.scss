@@ -3,7 +3,38 @@
 
 footer {
     width: 1150px;
-    @include flexStyling (flex, space-between, center);
     margin: 50px auto;
+}
+
+.support-container {
     background-color: $footer-color;
+    @include flexStyling (flex, space-between, center);
+    height: 70px;
+    border-radius: 37px;
+    padding: 0 30px;
+    
+}
+
+.support-section {
+    display: flex;
+    @include fontDesign (1.5rem, $font-heavy);
+    color: $primary-color;
+    .support-phone {
+        color: $secondary-color;
+    }
+}
+
+.support-request {
+    @include fontDesign (1.3rem, $font-default);
+    font-weight: 600;
+    
+    .support-link {
+        text-decoration: none;
+        
+        color: $secondary-color;
+    }
+    .support-arrow {
+        margin-bottom: -8px;
+        margin-right: 10px;
+    }
 }
