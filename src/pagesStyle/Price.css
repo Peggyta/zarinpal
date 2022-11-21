@@ -28,4 +28,33 @@
   width: 1170px;
   margin: 20px auto;
 }
+
+.price-description {
+  background-color: #fbf6f1;
+  border-radius: 15px;
+  padding: 20px 60px 100px;
+}
+
+.price-description .price-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-text-content {
+  color: #303030;
+}
+
+.price-text-content h3 {
+  font-size: 1.5rem;
+  font-family: "YekanBakhHeavy";
+}
+
+.price-text-content p {
+  font-size: 0.92rem;
+  font-family: "ireanyekanwebmedium";
+}
 /*# sourceMappingURL=Price.css.map */

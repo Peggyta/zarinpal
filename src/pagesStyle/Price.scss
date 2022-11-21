@@ -5,3 +5,23 @@
     width: 1170px;
     margin: 20px auto;
 }
+
+.price-description {
+    background-color: $price-bg-color;
+    border-radius: 15px;
+    padding: 20px 60px 100px;
+    .price-image {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.price-text-content {
+    color: $primary-color;
+    h3 {
+        @include fontDesign (1.5rem, $font-heavy);
+    }
+    p {
+        @include fontDesign (0.92rem, $font-default);
+    }
+}
