@@ -5,6 +5,7 @@ import StartBox from '../components/StartBox';
 //Image & Icons
 import PricePic from '../images/pricepic.jpg';
 import { FiChevronDown } from 'react-icons/fi';
+import { BiArrowBack } from 'react-icons/bi';
 
 
 const Price = () => {
@@ -29,8 +30,10 @@ const Price = () => {
                 <div></div>
                 <FiChevronDown className='down-icon' />
            </div>
+           <div className='table-title'>
+                <h3>تعرفه‌‌ها در زرین‌‌پال</h3>
+           </div>
            <div className='price-list'>
-            <h3>تعرفه‌‌ها در زرین‌‌پال</h3>
                 <div className='price-grid-table'>
                     <div className='grid-item'>تسویه‌‌حساب در ماه اول‌</div>
                     <div className='grid-item'>رایگان</div>
@@ -44,7 +47,16 @@ const Price = () => {
                     <div className='grid-item'>رایگان</div>
                 </div>
                 <div className='contact-us-container'>
-                    <h3></h3>
+                    <h3>کسب‌وکارهای بزرگ</h3>
+                    <p>چنان‌‌چه تراکنش‌‌های شما،
+                        از سقف ۱۰۰ تراکنش در روز بیش‌‌تر است، پیشنهاد می‌‌کنیم
+                        این مورد را در صفحه‌‌ی زیر، با ما در میان بگذارید
+                        ، تا جهت ارائه‌‌ی موثرترین راه‌‌کار، با شما تماس بگیریم.
+                    </p>
+                    <button className='contact-button'>
+                        تماس با ما
+                        <BiArrowBack />
+                    </button>
                 </div>
            </div>
            <StartBox />
