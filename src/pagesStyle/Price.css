@@ -51,10 +51,43 @@
 .price-text-content h3 {
   font-size: 1.5rem;
   font-family: "YekanBakhHeavy";
+  padding-bottom: 30px;
 }
 
 .price-text-content p {
   font-size: 0.92rem;
   font-family: "ireanyekanwebmedium";
+  line-height: 40px;
+}
+
+.price-down-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+}
+
+.price-down-button div {
+  background-image: url(../images/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+
+.price-down-button .down-icon {
+  position: relative;
+  bottom: 64px;
+  font-size: 25px;
 }
 /*# sourceMappingURL=Price.css.map */

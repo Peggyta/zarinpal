@@ -20,8 +20,26 @@
     color: $primary-color;
     h3 {
         @include fontDesign (1.5rem, $font-heavy);
+        padding-bottom: 30px;
     }
     p {
         @include fontDesign (0.92rem, $font-default);
+        line-height: 40px;
+    }
+}
+
+.price-down-button {
+    @include flexStyling (flex, center, center);
+    flex-direction: column;
+    @include goDownBtn (40px);
+    width: 100%;
+    div {
+        background-image: url(../images/arrowbottom.svg);
+        width: 164px;
+        height: 78px; 
+    }
+    .down-icon {
+        @include goDownBtn (64px);
+        font-size: 25px;
     }
 }
