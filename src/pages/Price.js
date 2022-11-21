@@ -38,11 +38,11 @@ const Price = () => {
                     <div className='grid-item'>تسویه‌‌حساب در ماه اول‌</div>
                     <div className='grid-item'>رایگان</div>
                     <div className='grid-item'>تسویه‌حساب به حساب بانکی</div>
-                    <div className='grid-item'>۱٪ تا سقف ۳۰۰۰تومان به ازای هر تراکنش</div>
+                    <div className='grid-item'> <span>۱٪</span> تا سقف <span>۳۰۰۰</span> تومان به ازای هر تراکنش</div>
                     <div className='grid-item'>زرین‌‌لینک</div>
-                    <div className='grid-item'>۲۰۰تومان به ازای هر تراکنش از پرداخت‌‌کننده</div>
+                    <div className='grid-item'><span>۲۰۰ </span>تومان به ازای هر تراکنش از پرداخت‌‌کننده </div>
                     <div className='grid-item'>تسویه‌‌حساب زرین‌‌کارت</div>
-                    <div className='grid-item'>۰.۵٪ تا سقف ۲۰۰۰ تومان به ازای هر تراکنش</div>
+                    <div className='grid-item'> <span>۰.۵٪</span> تا سقف <span>۲۰۰۰</span> تومان به ازای هر تراکنش</div>
                     <div className='grid-item'>تسویه‌حساب در سه‌شنبه‌های طلایی</div>
                     <div className='grid-item'>رایگان</div>
                 </div>
@@ -55,10 +55,26 @@ const Price = () => {
                     </p>
                     <button className='contact-button'>
                         تماس با ما
-                        <BiArrowBack />
+                        <BiArrowBack className='arrow-contact' />
                     </button>
                 </div>
            </div>
+           <div className='more-description'>
+                    <h3>توضیحات بیش‌‌تر را این‌‌جا بخوانید:</h3>
+                    <h4>تعرفه‌های فوق منوط به ثبت کد مالیاتی و نماد اعتماد می‌باشد.</h4>
+                    <p>پس از هر تراکنش موفق، بلافاصله کارمزد آن محاسبه
+                        و کسر خواهد شد و موجودی قابل تسویه،
+                        حداکثر یک روز بعد، تا ساعت ۱۷ به حساب پذیرنده واریز می‌‌شود.
+                    </p>
+                    <p>
+                    فرآیند تسویه‌‌حساب پذیرندگان در روزهای تعطیل رسمی
+                    ، مطابق با فرآیند پرداخت‌‌یاری، به روز پس از تعطیلی موکول می‌‌شود.
+                    </p>
+                    <p>
+                    در هر تراکنش با زرین‌لینک،
+                    مبلغ ۲۰۰ تومان به عنوان کارمزد از شخص پرداخت‌کننده کسر خواهد شد.
+                    </p>
+                </div>
            <StartBox />
         </div>
         </>
