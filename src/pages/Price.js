@@ -6,6 +6,7 @@ import StartBox from '../components/StartBox';
 import PricePic from '../images/pricepic.jpg';
 import { FiChevronDown } from 'react-icons/fi';
 import { BiArrowBack } from 'react-icons/bi';
+import { BiCaretLeft } from 'react-icons/bi';
 
 
 const Price = () => {
@@ -46,6 +47,7 @@ const Price = () => {
                     <div className='grid-item'>تسویه‌حساب در سه‌شنبه‌های طلایی</div>
                     <div className='grid-item'>رایگان</div>
                 </div>
+                <div className='contact-box'>
                 <div className='contact-us-container'>
                     <h3>کسب‌وکارهای بزرگ</h3>
                     <p>چنان‌‌چه تراکنش‌‌های شما،
@@ -58,21 +60,27 @@ const Price = () => {
                         <BiArrowBack className='arrow-contact' />
                     </button>
                 </div>
+                </div>
+                
            </div>
            <div className='more-description'>
                     <h3>توضیحات بیش‌‌تر را این‌‌جا بخوانید:</h3>
                     <h4>تعرفه‌های فوق منوط به ثبت کد مالیاتی و نماد اعتماد می‌باشد.</h4>
-                    <p>پس از هر تراکنش موفق، بلافاصله کارمزد آن محاسبه
+                    <p>
+                        <BiCaretLeft className='left-arrow' />
+                        پس از هر تراکنش موفق، بلافاصله کارمزد آن محاسبه
                         و کسر خواهد شد و موجودی قابل تسویه،
                         حداکثر یک روز بعد، تا ساعت ۱۷ به حساب پذیرنده واریز می‌‌شود.
                     </p>
                     <p>
-                    فرآیند تسویه‌‌حساب پذیرندگان در روزهای تعطیل رسمی
-                    ، مطابق با فرآیند پرداخت‌‌یاری، به روز پس از تعطیلی موکول می‌‌شود.
+                        <BiCaretLeft className='left-arrow' />
+                        فرآیند تسویه‌‌حساب پذیرندگان در روزهای تعطیل رسمی
+                        ، مطابق با فرآیند پرداخت‌‌یاری، به روز پس از تعطیلی موکول می‌‌شود.
                     </p>
                     <p>
-                    در هر تراکنش با زرین‌لینک،
-                    مبلغ ۲۰۰ تومان به عنوان کارمزد از شخص پرداخت‌کننده کسر خواهد شد.
+                        <BiCaretLeft className='left-arrow' />
+                        در هر تراکنش با زرین‌لینک،
+                        مبلغ ۲۰۰ تومان به عنوان کارمزد از شخص پرداخت‌کننده کسر خواهد شد.
                     </p>
                 </div>
            <StartBox />
