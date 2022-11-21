@@ -37,7 +37,6 @@ const Banner = () => {
             <Cards />
             <Features />
             <StartBox />
-            <Footer />
         </>
         
     );

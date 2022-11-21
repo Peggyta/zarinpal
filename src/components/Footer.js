@@ -26,45 +26,48 @@ const Footer = () => {
             </div>
             <div className='footer-section'>
                 <div className='shortcut-section'>
-                    <div>
+                    <div className='shortcut-list'>
                         <h4>محصولات</h4>
-                        <NavLink>زرین‌لینک</NavLink>
-                        <NavLink>درگاه پرداخت اینترنتی</NavLink>
-                        <NavLink>زرین‌کارت</NavLink>
-                        <NavLink>تسهیم</NavLink>
+                        <NavLink className='footer-links'>زرین‌لینک</NavLink>
+                        <NavLink className='footer-links'>درگاه پرداخت اینترنتی</NavLink>
+                        <NavLink className='footer-links'>زرین‌کارت</NavLink>
+                        <NavLink className='footer-links'>تسهیم</NavLink>
                     </div>
-                    <div>
+                    <div className='shortcut-list'>
                         <h4>آشنایی با زرین‌پال</h4>
-                        <NavLink>تعرفه‌ها</NavLink>
-                        <NavLink>درباره ما</NavLink>
-                        <NavLink>سوالات متداول</NavLink>
-                        <NavLink>همکاری در فروش</NavLink>
+                        <NavLink className='footer-links'>تعرفه‌ها</NavLink>
+                        <NavLink className='footer-links'>درباره ما</NavLink>
+                        <NavLink className='footer-links'>سوالات متداول</NavLink>
+                        <NavLink className='footer-links'>همکاری در فروش</NavLink>
                     </div>
-                    <div>
+                    <div className='shortcut-list'>
                         <h4>ارتباط بیشتر</h4>
-                        <NavLink>تماس با ما</NavLink>
-                        <NavLink>قوانین و مقررات</NavLink>
-                        <NavLink>حریم ‌خصوصی</NavLink>
+                        <NavLink className='footer-links'>تماس با ما</NavLink>
+                        <NavLink className='footer-links'>قوانین و مقررات</NavLink>
+                        <NavLink className='footer-links'>حریم ‌خصوصی</NavLink>
                     </div>
-                    <div>
+                    <div className='shortcut-list'>
                         <h4>منابع</h4>
-                        <NavLink>دریافت شماره شبا</NavLink>
-                        <NavLink>زرین‌بین</NavLink>
-                        <NavLink>توسعه‌دهندگان</NavLink>
-                        <NavLink>وبلاگ</NavLink>
-                        <NavLink>سنجش رضایتمندی</NavLink>
+                        <NavLink className='footer-links'>دریافت شماره شبا</NavLink>
+                        <NavLink className='footer-links'>زرین‌بین</NavLink>
+                        <NavLink className='footer-links'>توسعه‌دهندگان</NavLink>
+                        <NavLink className='footer-links'>وبلاگ</NavLink>
+                        <NavLink className='footer-links'>سنجش رضایتمندی</NavLink>
                     </div>
                 </div>
                 <div className='social-media'>
                     <h4>زرین‌پال در شبکه‌های اجتماعی:</h4>
                     <div className='icon-section'>
-                        <a><FaInstagram /></a>
-                        <a><FaTwitter /></a>
-                        <a><FaTelegramPlane /></a>
-                        <a><FaLinkedinIn /></a>
-                        <a><SiAparat /></a>
+                        <a href='#'><FaInstagram className='footer-icons' /></a>
+                        <a href='#'><FaTwitter className='footer-icons' /></a>
+                        <a href='#'><FaTelegramPlane className='footer-icons' /></a>
+                        <a href='#'><FaLinkedinIn className='footer-icons' /></a>
+                        <a href='#'><SiAparat className='footer-icons' /></a>
                     </div>
                 </div>
+            </div>
+            <div className='copy-right-footer'>
+                <p>© ‌‌زرین‌پال ۱۴۰۱-۱۳۸۹</p>
             </div>
         </footer>
     );

@@ -1,10 +1,10 @@
 import './App.css';
-import React,{useState} from 'react';
+import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 //Components
-import Navbar from './components/Navbar';
+import WithNav from './components/WithNav';
+import WithoutNav from './components/WithoutNav';
 import Banner from './components/Banner';
-import Menu from './components/Menu';
 import ContactUs from './pages/ContactUs';
 import Developers from './pages/Developers';
 import MyZarinPal from './pages/MyZarinPal';
@@ -12,19 +12,22 @@ import Price from './pages/Price';
 import Products from './pages/Products';
 
 function App() {
-  const[isClicked, setIsClicked] = useState(false);
   return (
     <div className='App'>
-        <Navbar isClicked={isClicked} setIsClicked={setIsClicked} />
-        {isClicked ? <Menu /> : null}
+      
       <Routes>
-          <Route path="products" element={<Products />} />
-          <Route path="price" element={<Price />} />
-          <Route path="developers" element={<Developers />} />
-          <Route path="contact-us" element={<ContactUs />} />
-          <Route path="my-zarin-pal" element={<MyZarinPal />} />
-          <Route path="/" exact={true} element={<Banner />} />
-      </Routes>
+          <Route element={<WithoutNav />} >
+            <Route path="developers" element={<Developers />} />
+            <Route path="my-zarin-pal" element={<MyZarinPal />} />
+          </Route>
+          <Route element={<WithNav />} >
+            <Route path="products" element={<Products />} />
+            <Route path="price" element={<Price />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            <Route path="/" exact={true} element={<Banner />} />
+          </Route>
+          
+      </Routes>       
     </div>
   );
 }
