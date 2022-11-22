@@ -62,6 +62,20 @@
     }
 }
 
+.bell {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    .bell-icon {
+       background-color: $price-amount-color;
+       padding: 10px;
+       font-size: 25px;
+       border-radius: 50px;
+       cursor: pointer;
+       color: $light-color; 
+    }
+}
+
 /*Responsive*/
 @include responsive (L) {
     .banner {
