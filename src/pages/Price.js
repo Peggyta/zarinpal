@@ -48,18 +48,18 @@ const Price = () => {
                     <div className='grid-item'>رایگان</div>
                 </div>
                 <div className='contact-box'>
-                <div className='contact-us-container'>
-                    <h3>کسب‌وکارهای بزرگ</h3>
-                    <p>چنان‌‌چه تراکنش‌‌های شما،
+                    <div className='contact-us-container'>
+                        <h3>کسب‌وکارهای بزرگ</h3>
+                        <p>چنان‌‌چه تراکنش‌‌های شما،
                         از سقف ۱۰۰ تراکنش در روز بیش‌‌تر است، پیشنهاد می‌‌کنیم
                         این مورد را در صفحه‌‌ی زیر، با ما در میان بگذارید
                         ، تا جهت ارائه‌‌ی موثرترین راه‌‌کار، با شما تماس بگیریم.
-                    </p>
-                    <button className='contact-button'>
-                        تماس با ما
-                        <BiArrowBack className='arrow-contact' />
-                    </button>
-                </div>
+                        </p>
+                        <button className='contact-button'>
+                            تماس با ما
+                            <BiArrowBack className='arrow-contact' />
+                        </button>
+                    </div>
                 </div>
                 
            </div>
