@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../pagesStyle/Developers.css';
 //Image & Icons
@@ -30,9 +30,8 @@ const Developers = () => {
             setNavbar(false);
         }
     };
+
     window.addEventListener('scroll', changeBackground);
-    
-    
     return (
         <>
             <div className='lab'>
