@@ -1,0 +1,274 @@
+@import '../scss/mixins';
+@import '../scss//variables';
+
+.lab {
+    width: 100%;
+    height: 100vh;
+    background-color: $lab-bg-color;
+}
+
+.visibleNav {
+    @include flexStyling(flex, space-between, center);
+    background-color: $lab-nav-color;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 10px 0 7px;
+    z-index: 100; 
+}
+
+.visibleNav.active {
+    position: fixed;
+    top: 0;
+    background-color: $tertiary-color;
+    transition: all .3s ease-in;
+    .lab-link {
+        color: $dark-color;
+    }
+}
+
+.lab-logo { 
+    display: flex;
+    img {
+        width: 170px;
+        margin-right: 90px;
+    }
+    p {
+        padding: 5px 8px;
+        @include fontDesign (1.6rem, $font-heavy);
+        color: $register-button;
+    }
+}
+
+.lab-navbar-items {
+    display: flex;
+    margin-left: 50px; 
+}
+
+.lab-navbar-items {
+    li {
+        list-style-type: none;
+        .lab-link {
+            text-decoration: none;
+            color: $light-color;
+            @include marginNav;
+            @include fontDesign (0.9rem, $font-default);
+        }
+    }
+}
+
+.drop-sign {
+    @include dropDownIcon;
+}
+
+.zarinpal-lab {
+    width: 55%;
+    margin: auto;
+    height: calc(100% - 90px);
+    @include flexStyling (flex, center, center); 
+    flex-direction: column;
+    color: $light-color;
+    font-family: $font-bold;
+    p {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 4.6rem;
+        text-shadow: 2px 2px 10px rgba(28, 25, 82, 0.429);
+    }
+}
+
+.lab-input-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    .lab-input {
+        width: 100%;
+        padding: 7px;
+    }
+    .lab-input::placeholder {
+        text-align:end;
+        padding-left: 30px;  
+    }
+    .lab-icon {
+        position: absolute;
+        bottom: 8px;
+        left: -10px;
+        color: $primary-color;
+        font-size: 18px;
+    }
+}
+
+/*second part of the component*/
+.extention-container {
+    width: 1170px;
+    margin:100px auto;
+    height: 60vh;
+    h2 {
+        text-align: center;
+        @include fontDesign (3.2rem, $font-bold);
+        color: $primary-color;
+        text-shadow: -1px 2px  rgb(255, 255, 255) ,
+        -3px 3px  rgba(208, 208, 230, 0.98);
+    }
+}
+
+.extention-list {
+    margin-top: 50px;
+}
+
+.extention-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    img {
+        width: 75px;
+    }
+    .extention-link {
+        text-decoration: none;
+        @include fontDesign (0.94rem, $font-default);
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+        p {
+            padding-right: 10px;
+        }
+    }
+}
+
+/*footer*/
+.footer-container {
+    background-color: $footer-lab-color;
+    width: 100%;
+    margin: auto;
+    font-family: $font-default;   
+}
+
+.footer-title {
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    .pay-icon {
+        font-size: 1.8rem;
+        padding-left: 5px;
+    }
+    h3 {
+        font-size: 0.95rem;
+    }
+}
+
+.register-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+    padding: 15px 0;
+    .footer-buttoms {
+        button {
+        @include buttonStyling;
+        background-color: $footer-buttons;
+        font-size: 0.85rem;
+        border-radius: 0;
+        margin-left: 10px;
+        }
+    }
+}
+
+
+
+.footer-list-title {
+    @include flexStyling (flex, space-between, center);
+    width: 1170px;
+    border-top: 1px solid $footer-border;
+    padding: 20px 0;
+    margin: 0 auto;
+    .footer-list-items {
+        @include flexStyling (flex, space-between, center);
+        width: 47%;   
+    }
+}
+
+.footer-titles {
+    padding-bottom: 6px;
+}
+
+.footer-list-items {
+    div {
+        ul {
+            color: $primary-color;  
+            li {
+                color: $section-title-color;
+                font-size: 0.84rem;
+                padding-top: 13px;
+            }
+        }
+    }
+}
+
+
+.news {
+    div {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        p {
+            color: $primary-color;
+        }  
+        input {
+            width: 75%;
+            padding: 12px 0;
+            border: 1px solid $border-color;
+        }
+        button {
+            padding: 12px 42px;
+            border: none;
+            @include fontDesign (0.8rem, $font-default);
+            color: $light-color;
+            background-color: $news-button ;
+        }
+    }
+}
+
+.news-input::placeholder {
+    @include fontDesign (0.8rem, $font-default);
+    padding-right: 10px;
+}
+
+.news p:first-child {
+    font-size: 0.95rem;
+}
+
+.news p:last-child {
+    font-size: 0.75rem;
+}
+
+/*last part of the lab-footer*/
+.lab-social-media {
+    width: 1170px;
+    margin: auto;
+    padding: 15px 0;
+    @include flexStyling (flex, space-between, center);
+    border-top: 1px solid $footer-border;
+}
+
+.copy-right {
+    align-items: center;
+    font-size: 0.8rem;
+    color: $footer-font-color;
+    span {
+        color: $secondary-color;
+    }
+}
+
+.lab-icon-list {
+    margin-top: 5px;
+}
+
+.lab-icons {
+    color: $footer-font-color;
+    padding-left: 14px;
+    font-size: 17px;
+}

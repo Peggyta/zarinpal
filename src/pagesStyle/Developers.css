@@ -1,0 +1,422 @@
+/*Responsive*/
+@font-face {
+  font-family: 'ireanyekanwebmedium';
+  src: url("../fonts/iranyekanwebmedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ireanyekanwebregular';
+  src: url("../fonts/iranyekanwebregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhBold';
+  src: url("../fonts/YekanBakhBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhHeavy';
+  src: url("../fonts/YekanBakhHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhMedium';
+  src: url("../fonts/YekanBakhMedium.woff") format("woff");
+}
+
+.lab {
+  width: 100%;
+  height: 100vh;
+  background-color: #5e7291;
+}
+
+.visibleNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.128);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  padding: 10px 0 7px;
+  z-index: 100;
+}
+
+.visibleNav.active {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.72);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.visibleNav.active .lab-link {
+  color: #000000;
+}
+
+.lab-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lab-logo img {
+  width: 170px;
+  margin-right: 90px;
+}
+
+.lab-logo p {
+  padding: 5px 8px;
+  font-size: 1.6rem;
+  font-family: "YekanBakhHeavy";
+  color: #ffd900;
+}
+
+.lab-navbar-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+.lab-navbar-items li {
+  list-style-type: none;
+}
+
+.lab-navbar-items li .lab-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+  font-size: 0.9rem;
+  font-family: "ireanyekanwebmedium";
+}
+
+.drop-sign {
+  display: inline-block;
+  margin: -6px 2px;
+}
+
+.zarinpal-lab {
+  width: 55%;
+  margin: auto;
+  height: calc(100% - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  font-family: "YekanBakhBold";
+}
+
+.zarinpal-lab p {
+  font-size: 1.2rem;
+}
+
+.zarinpal-lab h1 {
+  font-size: 4.6rem;
+  text-shadow: 2px 2px 10px rgba(28, 25, 82, 0.429);
+}
+
+.lab-input-container {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.lab-input-container .lab-input {
+  width: 100%;
+  padding: 7px;
+}
+
+.lab-input-container .lab-input::-webkit-input-placeholder {
+  text-align: end;
+  padding-left: 30px;
+}
+
+.lab-input-container .lab-input:-ms-input-placeholder {
+  text-align: end;
+  padding-left: 30px;
+}
+
+.lab-input-container .lab-input::-ms-input-placeholder {
+  text-align: end;
+  padding-left: 30px;
+}
+
+.lab-input-container .lab-input::placeholder {
+  text-align: end;
+  padding-left: 30px;
+}
+
+.lab-input-container .lab-icon {
+  position: absolute;
+  bottom: 8px;
+  left: -10px;
+  color: #303030;
+  font-size: 18px;
+}
+
+/*second part of the component*/
+.extention-container {
+  width: 1170px;
+  margin: 100px auto;
+  height: 60vh;
+}
+
+.extention-container h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: "YekanBakhBold";
+  color: #303030;
+  text-shadow: -1px 2px white, -3px 3px rgba(208, 208, 230, 0.98);
+}
+
+.extention-list {
+  margin-top: 50px;
+}
+
+.extention-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.extention-items img {
+  width: 75px;
+}
+
+.extention-items .extention-link {
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-family: "ireanyekanwebmedium";
+  color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extention-items .extention-link p {
+  padding-right: 10px;
+}
+
+/*footer*/
+.footer-container {
+  background-color: #e7e7e7;
+  width: 100%;
+  margin: auto;
+  font-family: "ireanyekanwebmedium";
+}
+
+.footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #303030;
+}
+
+.footer-title .pay-icon {
+  font-size: 1.8rem;
+  padding-left: 5px;
+}
+
+.footer-title h3 {
+  font-size: 0.95rem;
+}
+
+.register-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.register-footer .footer-buttoms button {
+  border: none;
+  font-family: "ireanyekanwebmedium";
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f9c731;
+  font-size: 0.85rem;
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+.footer-list-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  border-top: 1px solid #d1d0d0;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.footer-list-title .footer-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 47%;
+}
+
+.footer-titles {
+  padding-bottom: 6px;
+}
+
+.footer-list-items div ul {
+  color: #303030;
+}
+
+.footer-list-items div ul li {
+  color: #747480;
+  font-size: 0.84rem;
+  padding-top: 13px;
+}
+
+.news div {
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news div p {
+  color: #303030;
+}
+
+.news div input {
+  width: 75%;
+  padding: 12px 0;
+  border: 1px solid #d2d5da;
+}
+
+.news div button {
+  padding: 12px 42px;
+  border: none;
+  font-size: 0.8rem;
+  font-family: "ireanyekanwebmedium";
+  color: #ffffff;
+  background-color: #313048;
+}
+
+.news-input::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  font-family: "ireanyekanwebmedium";
+  padding-right: 10px;
+}
+
+.news-input:-ms-input-placeholder {
+  font-size: 0.8rem;
+  font-family: "ireanyekanwebmedium";
+  padding-right: 10px;
+}
+
+.news-input::-ms-input-placeholder {
+  font-size: 0.8rem;
+  font-family: "ireanyekanwebmedium";
+  padding-right: 10px;
+}
+
+.news-input::placeholder {
+  font-size: 0.8rem;
+  font-family: "ireanyekanwebmedium";
+  padding-right: 10px;
+}
+
+.news p:first-child {
+  font-size: 0.95rem;
+}
+
+.news p:last-child {
+  font-size: 0.75rem;
+}
+
+/*last part of the lab-footer*/
+.lab-social-media {
+  width: 1170px;
+  margin: auto;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #d1d0d0;
+}
+
+.copy-right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  color: #4b4b4b;
+}
+
+.copy-right span {
+  color: #28457b;
+}
+
+.lab-icon-list {
+  margin-top: 5px;
+}
+
+.lab-icons {
+  color: #4b4b4b;
+  padding-left: 14px;
+  font-size: 17px;
+}
+/*# sourceMappingURL=Developers.css.map */

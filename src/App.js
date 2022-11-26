@@ -16,17 +16,16 @@ function App() {
     <div className='App'>
       
       <Routes>
-          <Route element={<WithoutNav />} >
-            <Route path="developers" element={<Developers />} />
-            <Route path="my-zarin-pal" element={<MyZarinPal />} />
-          </Route>
-          <Route element={<WithNav />} >
-            <Route path="products" element={<Products />} />
-            <Route path="price" element={<Price />} />
-            <Route path="contact-us" element={<ContactUs />} />
-            <Route path="/" exact={true} element={<Banner />} />
-          </Route>
-          
+        <Route element={<WithoutNav />} >
+          <Route path="developers" element={<Developers />} />
+          <Route path="my-zarin-pal" element={<MyZarinPal />} />
+        </Route>
+        <Route element={<WithNav />} >
+          <Route path="products" element={<Products />} />
+          <Route path="price" element={<Price />} />
+          <Route path="contact-us" element={<ContactUs />} />
+          <Route path="/" exact={true} element={<Banner />} />
+        </Route>
       </Routes>       
     </div>
   );

@@ -1,0 +1,347 @@
+/*Responsive*/
+@font-face {
+  font-family: 'ireanyekanwebmedium';
+  src: url("../fonts/iranyekanwebmedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'ireanyekanwebregular';
+  src: url("../fonts/iranyekanwebregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhBold';
+  src: url("../fonts/YekanBakhBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhHeavy';
+  src: url("../fonts/YekanBakhHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YekanBakhMedium';
+  src: url("../fonts/YekanBakhMedium.woff") format("woff");
+}
+
+.contact-us-page {
+  width: 1170px;
+  margin: auto;
+}
+
+.contact-us-box {
+  background-image: -webkit-gradient(linear, left top, right top, from(#21274f), to(#2a4880));
+  background-image: linear-gradient(to right, #21274f, #2a4880);
+  padding: 16px;
+  border-radius: 20px;
+  margin: 10px 0 90px 0;
+}
+
+.contact-us-box h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "YekanBakhBold";
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.address-bar {
+  font-family: "YekanBakhBold";
+  width: 35%;
+}
+
+.address-bar span {
+  color: #4b4b4b;
+  padding-left: 10px;
+}
+
+.address-bar p {
+  color: #747480;
+  line-height: 45px;
+}
+
+.address-bar .address-title {
+  font-size: 1.3rem;
+  color: #303030;
+  padding-bottom: 60px;
+}
+
+.phone-num,
+.postal-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.phone-num {
+  width: 65%;
+}
+
+.map-address {
+  -webkit-box-shadow: 3px 5px 10px #d1d0d0;
+          box-shadow: 3px 5px 10px #d1d0d0;
+}
+
+.tracking-section {
+  font-family: "YekanBakhBold";
+  color: #747480;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 50px;
+  margin: 60px 0;
+  border-radius: 15px;
+  border: 1px solid #c5c4c4;
+}
+
+.tracking-button {
+  text-decoration: none;
+  border: none;
+  font-family: "ireanyekanwebmedium";
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ffd900;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.support-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  border: 1px solid #c5c4c4;
+  padding: 50px 0;
+}
+
+.send-ticket input {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 1px solid #c5c4c4;
+}
+
+.send-ticket input::-webkit-input-placeholder {
+  font-size: 0.9rem;
+  font-family: "YekanBakhBold";
+  color: #747480;
+  padding-right: 20px;
+}
+
+.send-ticket input:-ms-input-placeholder {
+  font-size: 0.9rem;
+  font-family: "YekanBakhBold";
+  color: #747480;
+  padding-right: 20px;
+}
+
+.send-ticket input::-ms-input-placeholder {
+  font-size: 0.9rem;
+  font-family: "YekanBakhBold";
+  color: #747480;
+  padding-right: 20px;
+}
+
+.send-ticket input::placeholder {
+  font-size: 0.9rem;
+  font-family: "YekanBakhBold";
+  color: #747480;
+  padding-right: 20px;
+}
+
+.send-ticket button {
+  border: none;
+  font-family: "ireanyekanwebmedium";
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ffd900;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.next-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.enter-number {
+  font-size: 1rem;
+  font-family: "YekanBakhBold";
+  color: #747480;
+}
+
+/*responsive*/
+@media (max-width: 1200px) {
+  .contact-us-page {
+    width: 940px;
+  }
+  .address-bar {
+    width: 40%;
+  }
+  .gmap_canvas iframe {
+    width: 450px;
+  }
+  .phone-num {
+    width: 75%;
+  }
+}
+
+@media (max-width: 990px) {
+  .contact-us-page {
+    width: 90%;
+  }
+  .address-bar {
+    width: 55%;
+  }
+  .gmap_canvas iframe {
+    width: 300px;
+  }
+  .phone-num {
+    width: 60%;
+  }
+  .postal-code {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tracking-section {
+    padding-bottom: 75px;
+  }
+  .tracking-section .tracking-button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+  .support-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 95px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-page {
+    width: 97%;
+  }
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address-bar {
+    width: 69%;
+  }
+  .address-bar .address-title {
+    padding-bottom: 10px;
+  }
+  .postal-code {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .map-address {
+    margin-top: 10px;
+  }
+  .gmap_canvas iframe {
+    width: 100%;
+  }
+  .tracking-section {
+    padding-bottom: 120px;
+  }
+  .tracking-section .tracking-section-txt {
+    width: 70%;
+  }
+  .support-sec img {
+    width: 270px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .address-bar {
+    width: 85%;
+  }
+  .address-bar .address-title {
+    padding-bottom: 10px;
+  }
+  .phone-num {
+    width: 53%;
+  }
+  .postal-code {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+  }
+  .map-address {
+    margin: auto;
+    width: 97%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gmap_canvas iframe {
+    width: 100%;
+  }
+  .support-sec {
+    margin-bottom: 120px;
+  }
+  .support-sec img {
+    width: 240px;
+  }
+  .tracking-section {
+    padding-bottom: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .tracking-section .tracking-section-txt {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=ContactUs.css.map */

@@ -58,6 +58,7 @@
   font-size: 0.92rem;
   font-family: "ireanyekanwebmedium";
   line-height: 40px;
+  text-align: justify;
 }
 
 .price-down-button {
@@ -89,5 +90,246 @@
   position: relative;
   bottom: 64px;
   font-size: 25px;
+}
+
+/*Grid table*/
+.table-title {
+  color: #303030;
+  font-size: 1.5rem;
+  font-family: "YekanBakhHeavy";
+  padding-bottom: 20px;
+}
+
+.price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.price-grid-table {
+  width: 58%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.price-grid-table .grid-item {
+  font-size: 1rem;
+  font-family: "ireanyekanwebmedium";
+  padding: 20px 30px;
+  border: 1px solid #d2d5da;
+}
+
+.price-grid-table span {
+  color: #12a7d4;
+}
+
+.grid-item:first-child {
+  border-top-right-radius: 15px;
+}
+
+.grid-item:nth-child(2) {
+  border-top-left-radius: 15px;
+}
+
+.grid-item:nth-child(9) {
+  border-bottom-right-radius: 15px;
+}
+
+.grid-item:last-child {
+  border-bottom-left-radius: 15px;
+}
+
+.contact-box {
+  background-color: #21457f;
+  width: 40.5%;
+  border-radius: 17px;
+}
+
+.contact-box .contact-us-container {
+  padding: 30px;
+}
+
+.contact-box .contact-us-container h3 {
+  font-size: 2rem;
+  font-family: "YekanBakhHeavy";
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact-box .contact-us-container p {
+  font-size: 1rem;
+  font-family: "ireanyekanwebmedium";
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.contact-button {
+  margin-top: 20px;
+  border: none;
+  font-family: "ireanyekanwebmedium";
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #435a8a;
+}
+
+.arrow-contact {
+  margin-bottom: -5px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.more-description {
+  color: #303030;
+  margin-bottom: 40px;
+}
+
+.more-description h3 {
+  font-size: 1.5rem;
+  font-family: "YekanBakhHeavy";
+  padding-bottom: 20px;
+}
+
+.more-description h4 {
+  font-size: 1.1rem;
+  font-family: "YekanBakhBold";
+  margin-bottom: 6px;
+}
+
+.more-description p {
+  font-size: 0.95rem;
+  font-family: "ireanyekanwebmedium";
+  line-height: 40px;
+  text-align: justify;
+}
+
+.left-arrow {
+  padding-left: 7px;
+  margin-bottom: -5px;
+}
+
+/*Responsive*/
+@media (max-width: 1200px) {
+  .price-container {
+    width: 940px;
+  }
+  .table-title {
+    font-size: 1.3rem;
+  }
+  .price-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-grid-table {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .contact-box {
+    width: 100%;
+  }
+  .more-description {
+    width: 90%;
+    margin: 20px auto 70px;
+  }
+  .more-description p {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 990px) {
+  .price-container {
+    width: 90%;
+  }
+  .price-description .price-image {
+    display: none;
+  }
+  .price-text-content {
+    height: 290px;
+  }
+  .price-text-content h3 {
+    padding-top: 100px;
+  }
+  .price-grid-table {
+    border: 1px solid #d2d5da;
+    border-radius: 17px;
+  }
+  .price-grid-table .grid-item {
+    border: unset;
+    border-bottom: 1px solid #d2d5da;
+  }
+  .grid-item:last-child,
+  .grid-item:nth-child(9) {
+    border-bottom: unset;
+  }
+  .more-description {
+    margin-bottom: 100px;
+  }
+  .more-description p {
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-container {
+    width: 96%;
+    margin: 10px auto;
+  }
+  .price-text-content {
+    padding-bottom: 30px;
+  }
+  .price-text-content h3 {
+    padding-top: 80px;
+  }
+  .more-description {
+    width: 92%;
+  }
+  .more-description p {
+    font-size: 0.91rem;
+    line-height: 39px;
+  }
+  .price-grid-table .grid-item {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .price-description {
+    padding: 10px 30px 50px;
+  }
+  .price-text-content {
+    height: unset;
+  }
+  .price-text-content h3 {
+    padding-top: 70px;
+  }
+  .price-grid-table {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+  .price-grid-table .grid-item {
+    font-size: 0.84rem;
+    padding: 10px 40px;
+  }
+  .grid-item:nth-child(1),
+  .grid-item:nth-child(3),
+  .grid-item:nth-child(5),
+  .grid-item:nth-child(7),
+  .grid-item:nth-child(9) {
+    border-bottom: unset;
+  }
 }
 /*# sourceMappingURL=Price.css.map */

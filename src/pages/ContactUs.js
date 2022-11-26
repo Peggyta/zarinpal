@@ -1,5 +1,8 @@
 import React from 'react';
 import '../pagesStyle/ContactUs.css';
+//Image
+import supportImg from '../images/support.jpg';
+import { BsBell } from 'react-icons/bs';
 
 const ContactUs = () => {
     return (
@@ -42,19 +45,28 @@ const ContactUs = () => {
                 </div>
            </div>
            <div className='tracking-section'>
-                <p>جهت پیگیری تراکنش‌های درگاه پرداخت خود، روی لینک روبرو کلیک کنید.</p>
-                <a href='#'>پیگیری تراکنش</a>
+                <div className='tracking-section-txt'>
+                    <p>جهت پیگیری تراکنش‌های درگاه پرداخت خود، روی لینک روبرو کلیک کنید.</p>
+                </div>
+                <div className='tracking-section-btn'>
+                    <a className='tracking-button' href='#'>پیگیری تراکنش</a>
+                </div>     
            </div>
-           <div className='support-section'>
+           <div className='support-sec'>
                 <div>
-                    <img />
+                    <img src={supportImg} alt='support' />
                 </div>
                 <div className='send-ticket'>
-                    <p>جهت ارسال تیکت، لطفا شماره تلفن همراه خود را وارد نمایید.</p>
+                    <p className='enter-number'>جهت ارسال تیکت، لطفا شماره تلفن همراه خود را وارد نمایید.</p>
                     <input type='text' placeholder='شماره همراه' />
-                    <button>مرحله بعدی</button>
+                    <div className='next-button'>
+                        <button>مرحله بعدی</button>
+                    </div>  
                 </div>
            </div>
+           <div className='bell'>
+                <BsBell className='bell-icon' />
+            </div>
         </div>
     );
 };

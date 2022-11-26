@@ -3,12 +3,12 @@ import React from 'react';
 import Cards from './Cards';
 import Features from './Features';
 import StartBox from './StartBox';
-import Footer from './Footer';
 //Style
 import '../scss/Banner.css';
 //Image & Icons
 import bannerImg from '../images/home.svg';
 import { FiChevronDown } from 'react-icons/fi';
+import { BsBell } from 'react-icons/bs';
 
 const Banner = () => {
     return (
@@ -37,6 +37,9 @@ const Banner = () => {
             <Cards />
             <Features />
             <StartBox />
+            <div className='bell'>
+                <BsBell className='bell-icon' />
+            </div>
         </>
         
     );
