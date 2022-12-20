@@ -40,7 +40,7 @@ div[role='menu'].products-menu {
 }
 
 .link-list {
-  margin: 0 15px;
+  margin-inline: 15px;
   font-size: 0.9rem;
   font-family: "ireanyekanwebmedium";
   color: #303030;
@@ -58,8 +58,8 @@ div[role='menu'].products-menu {
   border-top: 5px solid #f8e88b;
   border-radius: 10px;
   position: absolute;
-  top: 76px;
-  left: 393px;
+  top: 65px;
+  left: 353px;
   padding: 10px 0;
 }
 

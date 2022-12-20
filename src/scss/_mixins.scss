@@ -5,7 +5,7 @@
 }
 
 @mixin marginNav {
-    margin: 0 15px;
+    margin-inline: 15px;
 }
 
 @mixin fontDesign ($fontSize, $fontFamily){
@@ -57,7 +57,7 @@
 @mixin footerIcons {
     background-color: $lastChild-color;
     color: $secondary-color;
-    font-size: 25px;
+    font-size: 40px;
     margin-top: 14px;
     margin-left: 15px;
     padding: 10px;
@@ -97,4 +97,11 @@
            @content;
        }
    }
+
+   @else if ($width == SD) {
+        @media (max-width: 541px) {
+            @content;
+        }
+    }
+
 }

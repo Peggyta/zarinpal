@@ -3,7 +3,7 @@
 
 footer {
     width: 1150px;
-    margin: 60px auto;
+    margin: auto;
 }
 
 .support-container {
@@ -33,10 +33,10 @@ footer {
     
     .support-link {
         text-decoration: none;
-        color: $secondary-color;
+        color: $secondary-color; 
     }
+    
     .support-arrow {
-        margin-bottom: -8px;
         margin-right: 10px;
     }
 }
@@ -79,12 +79,13 @@ footer {
         &:hover {
             background-color: $light-color;
             color: $iconHover-color;    
+            }
         }
-    }
    }
 }
+
 .copy-right-footer {
-    margin-top: 50px;
+    margin: 50px 0;
     p {
         text-align: center;
         @include fontDesign (0.85rem, $font-default);
@@ -101,7 +102,8 @@ footer {
 
 @include responsive (M) {
     footer {
-        width: 90%;
+        width: 85%;
+        margin: auto;
     }
     .support-container {
         padding: 0 25px;
@@ -130,6 +132,7 @@ footer {
 }
 
 @include responsive (S) {
+    
     .support-container {
         background-color: unset;
         align-items: flex-start;
@@ -142,6 +145,7 @@ footer {
         border-radius: 37px;
         font-size: 1rem;
     }
+    
     .footer-section {
         .shortcut-section {
             width: 100%;
@@ -155,6 +159,14 @@ footer {
             padding-top: 17px;
         }
     }
+    .social-media {
+       .footer-icons {
+        @include footerIcons {
+            margin-left: 0;
+            margin-inline: 7px;
+            }
+        }
+    } 
 }
 
 @include responsive (XS) {
@@ -204,7 +216,7 @@ footer {
             font-size: 0.9rem;
         }
         .footer-icons {
-            font-size: 15px;
+            font-size: 35px;
         }
     }
 }

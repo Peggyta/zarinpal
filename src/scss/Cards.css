@@ -78,10 +78,11 @@
   color: #303030;
   font-size: 1rem;
   font-family: "YekanBakhMedium";
-  line-height: 37px;
+  line-height: 39px;
   border-bottom: 1px solid #d2d5da;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .card-buttons {
@@ -215,6 +216,23 @@
   }
   .card-container {
     margin-top: 10px;
+  }
+  .card-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    width: 170px;
+  }
+  .card-buttons .know-more-button {
+    margin-top: 20px;
+  }
+  .card-buttons .payment-button {
+    margin-left: 0;
   }
   .img-card-container-two {
     display: none;

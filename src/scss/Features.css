@@ -63,6 +63,7 @@
 }
 
 .feature {
+  width: 100%;
   padding: 19px 50px 10px 8px;
   margin-left: -1px;
   margin-top: -1px;
@@ -94,7 +95,7 @@
 .feature-icon {
   background-color: rgba(216, 223, 239, 0.6);
   color: #28457b;
-  font-size: 40px;
+  font-size: 50px;
   padding: 8px;
   border-radius: 13px;
   margin-left: 15px;
@@ -119,6 +120,7 @@
 @media (max-width: 1200px) {
   .features {
     width: 924px;
+    margin: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -131,7 +133,7 @@
     margin-bottom: 30px;
   }
   .features .feature-list {
-    width: 80%;
+    width: 100%;
     padding: 30px;
   }
   .feature {
@@ -213,7 +215,6 @@
         grid-template-columns: 1fr;
   }
   .feature {
-    width: 80%;
     padding: 0 45px;
   }
   .feature div h4 {

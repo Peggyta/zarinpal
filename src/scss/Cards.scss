@@ -38,10 +38,11 @@
     p {
         color: $primary-color;
         @include fontDesign (1rem, $font-medium);
-        line-height: 37px;
+        line-height: 39px;
         border-bottom: 1px solid $border-color;
         padding-bottom: 20px;
         margin-bottom: 30px;
+        text-align: justify;
     }
 }
 
@@ -117,6 +118,7 @@
 }
 
 @include responsive (S) {
+    
     .card-container {
         margin-top: 30px;
         justify-content: center;
@@ -146,6 +148,20 @@
     .card-container {
         margin-top: 10px;
     }
+
+    .card-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 170px;
+        .know-more-button {
+            margin-top: 20px;
+        }
+        .payment-button {
+            margin-left: 0;
+        }
+    }
+    
     .img-card-container-two {
         display: none;
     }

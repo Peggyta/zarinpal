@@ -17,7 +17,7 @@ const MyZarinPal = () => {
     };
     useEffect(() => {
         window.addEventListener('resize', updateMedia);
-        return () => window.removeEventListener('resize', updateMedia)
+        return () => window.removeEventListener('resize', updateMedia);
     });
     return (
         <div className='login-container-main'>
@@ -37,7 +37,7 @@ const MyZarinPal = () => {
                     <div className='zarin-login-setion'>
                         <h3>ورود به زرین‌پال</h3>
                         <p>برای استفاده از خدمات زرین‌پال، وارد حساب کاربری خود شوید.
-                            در صورت نداشتن حساب کاربری ثبت‌‌نام کنید.
+                        در صورت نداشتن حساب کاربری  <span>ثبت‌نام</span> کنید.
                         </p>
                         <div className='zarin-input-section'>
                             <input type='text' placeholder='شماره همراه یا ایمیل' />

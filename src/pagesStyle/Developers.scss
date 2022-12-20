@@ -94,7 +94,7 @@
     .lab-icon {
         position: absolute;
         bottom: 8px;
-        left: -10px;
+        left: 8px;
         color: $primary-color;
         font-size: 18px;
     }
@@ -186,7 +186,8 @@
     margin: 0 auto;
     .footer-list-items {
         @include flexStyling (flex, space-between, center);
-        width: 47%;   
+        width: 47%;
+        margin: auto;   
     }
 }
 
@@ -270,5 +271,5 @@
 .lab-icons {
     color: $footer-font-color;
     padding-left: 14px;
-    font-size: 17px;
+    font-size: 27px;
 }

@@ -45,8 +45,8 @@ div[role='menu'].visible {
   border-top: 5px solid #f8e88b;
   border-radius: 10px;
   position: absolute;
-  top: 76px;
-  left: 135px;
+  top: 65px;
+  left: 105px;
 }
 
 .drop-list-items {
@@ -68,6 +68,15 @@ div[role='menu'].visible {
   font-size: 0.9rem;
   font-family: "YekanBakhMedium";
   color: #000000;
+}
+
+.drop-list-items li {
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.drop-list-items li:hover {
+  background-color: rgba(216, 223, 239, 0.6);
 }
 
 .drop-down-sign {

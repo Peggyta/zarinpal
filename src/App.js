@@ -14,7 +14,6 @@ import Products from './pages/Products';
 function App() {
   return (
     <div className='App'>
-      
       <Routes>
         <Route element={<WithoutNav />} >
           <Route path="developers" element={<Developers />} />

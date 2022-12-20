@@ -94,7 +94,7 @@
 .lab-navbar-items li .lab-link {
   text-decoration: none;
   color: #ffffff;
-  margin: 0 15px;
+  margin-inline: 15px;
   font-size: 0.9rem;
   font-family: "ireanyekanwebmedium";
 }
@@ -168,7 +168,7 @@
 .lab-input-container .lab-icon {
   position: absolute;
   bottom: 8px;
-  left: -10px;
+  left: 8px;
   color: #303030;
   font-size: 18px;
 }
@@ -303,6 +303,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 47%;
+  margin: auto;
 }
 
 .footer-titles {
@@ -417,6 +418,6 @@
 .lab-icons {
   color: #4b4b4b;
   padding-left: 14px;
-  font-size: 17px;
+  font-size: 27px;
 }
 /*# sourceMappingURL=Developers.css.map */

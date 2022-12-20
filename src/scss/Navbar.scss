@@ -1,14 +1,14 @@
-@import "./mixins";
-@import "./variables";
+@import './variables';
+@import './mixins';
 
 header {
     @include flexStyling(flex, space-between, center);
     background-color: $tertiary-color;
     backdrop-filter: blur(20px);
     width: 1170px;
-    height: 60px;
+    height: 80px;
     margin: auto;
-    padding: 20px 0 7px;
+    padding: 20px 15px 7px 15px;
     z-index: 100;
     position: sticky;
     top: 0;
@@ -21,7 +21,6 @@ header {
 
         .link-list {
             text-decoration: none;
-            @include marginNav;
             @include fontDesign (0.9rem, $font-default);
             color: $primary-color;
         }
@@ -29,20 +28,15 @@ header {
 
 }
 
+
 .navbar-wrapper > li:last-child {
     background-color: $lastChild-color;
     border-radius: 20px;
-    margin: 0 15px;
     @include fontDesign (0.6rem, $font-bold);
     font-weight: 600;
-    padding: 0 10px;
     &:hover {
         background-color: $hover-color;
     }
-}
-
-.logo-container {
-    @include marginNav;
 }
 
 .icon-container {
@@ -52,7 +46,7 @@ header {
 /*Responsive*/
 @include responsive (L) {
     header {
-        width: 940px;
+        max-width: 940px;
     }
 }
 
@@ -60,15 +54,7 @@ header {
     header {
         width: auto;
         padding: 10px 40px; 
-        max-width: auto;
-        img {
-            margin-right: -20px; 
-        }
     }
-    nav {
-        margin-right: auto;
-    }
-
     .navbar-wrapper > li:last-child {
         display: none;
     } 
@@ -76,25 +62,20 @@ header {
 
 @include responsive (S) {
     header {
-        max-width: none;
-        padding: 10px 0;
         width: auto;
-        height: 40px;
         backdrop-filter: none;
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
         background-color: $light-color;
-        
+
         nav {
             display: none;
         }
     }
 
-    .logo-container {
-        padding-right: 30px;
-    }
-
     .icon-container {
         display: block;
         font-size: 25px;
-        padding-left: 30px;
     }
 }

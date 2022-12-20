@@ -9,7 +9,6 @@ import { FiX } from 'react-icons/fi';
 import '../scss/Navbar.css';
 import ProductsDropMenu from '../pages/ProductsDropMenu';
 
-
 const Navbar = ({isClicked, setIsClicked}) => {
     const clickHandler = () => {
         setIsClicked(!isClicked)

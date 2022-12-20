@@ -39,7 +39,7 @@ const Menu = ({isClicked, setIsClicked}) => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink className='hambur-list' to="/my-zarin-pal">
+                    <NavLink className='hambur-list'  to="/my-zarin-pal">
                         زرین‌پال‌من
                     </NavLink>
                 </li>

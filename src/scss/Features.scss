@@ -30,6 +30,7 @@
 }
 
 .feature {
+    width: 100%;
     padding: 19px 50px 10px 8px;
     margin-left: -1px;
     margin-top: -1px;
@@ -52,7 +53,7 @@
 .feature-icon {
     background-color: $lastChild-color;
     color: $secondary-color;
-    font-size: 40px;
+    font-size: 50px;
     padding: 8px;
     border-radius: 13px;
     margin-left: 15px;
@@ -77,6 +78,7 @@
 @include responsive (L) {
     .features {
         width: 924px;
+        margin: auto;
         flex-direction: column;
         padding: 0 8px;
         .definition {
@@ -85,7 +87,7 @@
             margin-bottom: 30px;
         }
         .feature-list {
-            width: 80%;
+            width: 100%;
             padding: 30px;
         }
     }
@@ -179,7 +181,6 @@
         grid-template-columns: 1fr;
     }
     .feature {
-        width: 80%;
         padding: 0 45px;
         div h4 {
             font-size: 1.2rem;

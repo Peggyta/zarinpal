@@ -2,8 +2,10 @@
 @import './variables';
 
 .hambur-menu {
-    position: fixed;
-    top:60px;
+    position: sticky;
+    width: 100%;
+    top: 40px;
+    right:0;
 }
 
 @include responsive (XL) {
@@ -26,15 +28,16 @@
 
 @include responsive (S) {
     .hambur-menu {
-        display: block;
+        display: block ;
         background-color: $light-color;
         width: 100%;
-        height: 220px;
+        margin: auto;
+        height: 230px;
         
         .hambur-wrapper {
             display: flex;
             flex-direction: column;
-            margin-right: 30px;  
+            padding-right: 30px;  
             div {
                 height: 1px;
                 width: 90%;

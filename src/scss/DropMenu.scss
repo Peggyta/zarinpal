@@ -18,7 +18,7 @@ div[role='menu'].visible {
     width:115px;
     background-color: $light-color;
     @include dropMeuBorder;
-    @include dropDownPosition (absolute, 76px, 135px);
+    @include dropDownPosition (absolute, 65px, 105px);
 }
 
 .drop-list-items {
@@ -32,6 +32,15 @@ div[role='menu'].visible {
         text-decoration: none;
         @include fontDesign (0.9rem, $font-medium);
         color: $dark-color;
+    }
+}
+
+.drop-list-items {
+    li {
+        &:hover {
+            background-color: $lastChild-color;
+        }
+        transition: all .1s ease-in;
     }
 }
 

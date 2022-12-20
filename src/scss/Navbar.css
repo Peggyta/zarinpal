@@ -1,4 +1,3 @@
-/*Responsive*/
 @font-face {
   font-family: 'ireanyekanwebmedium';
   src: url("../fonts/iranyekanwebmedium.woff") format("woff");
@@ -24,6 +23,7 @@
   src: url("../fonts/YekanBakhMedium.woff") format("woff");
 }
 
+/*Responsive*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,9 +38,9 @@ header {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   width: 1170px;
-  height: 60px;
+  height: 80px;
   margin: auto;
-  padding: 20px 0 7px;
+  padding: 20px 15px 7px 15px;
   z-index: 100;
   position: -webkit-sticky;
   position: sticky;
@@ -59,7 +59,6 @@ header ul {
 
 header ul .link-list {
   text-decoration: none;
-  margin: 0 15px;
   font-size: 0.9rem;
   font-family: "ireanyekanwebmedium";
   color: #303030;
@@ -68,19 +67,13 @@ header ul .link-list {
 .navbar-wrapper > li:last-child {
   background-color: rgba(216, 223, 239, 0.6);
   border-radius: 20px;
-  margin: 0 15px;
   font-size: 0.6rem;
   font-family: "YekanBakhBold";
   font-weight: 600;
-  padding: 0 10px;
 }
 
 .navbar-wrapper > li:last-child:hover {
   background-color: #f9eeee;
-}
-
-.logo-container {
-  margin: 0 15px;
 }
 
 .icon-container {
@@ -90,7 +83,7 @@ header ul .link-list {
 /*Responsive*/
 @media (max-width: 1200px) {
   header {
-    width: 940px;
+    max-width: 940px;
   }
 }
 
@@ -98,13 +91,6 @@ header ul .link-list {
   header {
     width: auto;
     padding: 10px 40px;
-    max-width: auto;
-  }
-  header img {
-    margin-right: -20px;
-  }
-  nav {
-    margin-right: auto;
   }
   .navbar-wrapper > li:last-child {
     display: none;
@@ -113,24 +99,20 @@ header ul .link-list {
 
 @media (max-width: 768px) {
   header {
-    max-width: none;
-    padding: 10px 0;
     width: auto;
-    height: 40px;
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #ffffff;
   }
   header nav {
     display: none;
   }
-  .logo-container {
-    padding-right: 30px;
-  }
   .icon-container {
     display: block;
     font-size: 25px;
-    padding-left: 30px;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

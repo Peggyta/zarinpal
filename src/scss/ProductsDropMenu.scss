@@ -29,7 +29,7 @@ div[role='menu'].products-menu {
     width: 375px;
     background-color: $light-color;
     @include dropMeuBorder;
-    @include dropDownPosition (absolute, 76px, 393px);
+    @include dropDownPosition (absolute, 65px, 353px);
     padding: 10px 0;
 }
 

@@ -1,0 +1,111 @@
+@import '../scss/mixins';
+@import '../scss/variables';
+
+.login-container-main {
+    background-color: $login-page-color;
+    width:100%;
+    height: 100vh;
+}
+
+.login-container {
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    @include flexStyling (flex, center, center);
+}
+
+.logo-login {
+    padding: 20px 30px;
+    @include flexStyling (flex, space-between, center);
+}
+
+.logo-pic-login {
+    width: 120px;
+}
+
+.login-link {
+    @include buttonStyling {
+        font-size: 0.9rem;
+    };
+    border: 1px solid $border-color;
+    border-radius: 30px;
+    a {
+        text-decoration: none;
+        color: $footer-font-color;
+    }
+}
+
+.zarin-login-setion {
+    padding: 0 30px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        @include fontDesign (1.5rem, $font-heavy);
+    }
+    p {
+        @include fontDesign (0.95rem, $font-bold);
+        color: $primary-color;
+        margin-bottom: 20px;
+        span {
+            color: $price-amount-color;
+        }
+    }
+}
+
+.zarin-input-section {
+    input {
+        width: 100%;
+        padding: 12px 0;
+        border: 1px solid $section-title-color;
+        border-radius: 5px;
+    }
+    input::placeholder {
+        padding-right: 11px;
+        @include fontDesign (0.8rem, $font-default);
+        color: $darker-border;
+    }
+}
+
+.continue-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    button {
+        @include buttonStyling;
+        background-color: $register-button;
+        font-size: 0.85rem;
+        border-radius: 20px;
+    }
+    
+}
+
+.register-login {
+    height: 530px;
+    width: 390px;
+    background-color: $light-color;
+    width: fit-content;
+    box-shadow: 5px 5px 15px $darker-border;
+}
+
+.img-slider {
+    height: 530px;     
+}
+
+@include responsive (L) {
+    .register-login {
+        width: 600px;
+    }
+}
+
+@include responsive (M) {
+    .login-container {
+        width: 100%;
+    }
+    .register-login {
+        width: 390px;
+    }
+}
+
+
+
