@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 import { FiChevronDown } from 'react-icons/fi';
 import '../scss/DropMenu.css';
 
 const DropMenu = () => {
     const { buttonProps, itemProps, isOpen } = useDropdownMenu(5);
+
     return (
         <>
             <button className='link-list' id='dropDown-menu' {...buttonProps}>
                 بیش‌تر
                 <FiChevronDown className='drop-down-sign' />
             </button>
-            <div className={isOpen ? 'visible' : ''} role='menu'>
+            <div className={isOpen ? 'visible active' : ''} role='menu'>
                     <ul className='drop-list-items'>
                     <li><a {...itemProps[0]} href='#'>وبلاگ</a></li>
                     <li><a {...itemProps[1]} href='#'>دریافت شماره شبا</a></li>
