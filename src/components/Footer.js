@@ -20,8 +20,9 @@ const Footer = () => {
                     <span className='support-phone'>۰۲۱-۴۱۲۳۹</span>
                 </div>
                 <div className='support-request'>
-                    <NavLink to='/contact-us' className='support-link'>
-                    درخواست پشتیبانی<BiArrowBack className='support-arrow' /></NavLink>
+                    <div><NavLink to='/contact-us' className='support-link'>
+                    درخواست پشتیبانی </NavLink></div>
+                    <div className='support-req-icon'><BiArrowBack className='support-arrow' /></div>
                 </div>
             </div>
             <div className='footer-section'>
@@ -67,7 +68,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className='copy-right-footer'>
-                <p>© ‌‌زرین‌پال ۱۴۰۱-۱۳۸۹</p>
+                <span>©</span>
+                <p> ‌‌زرین‌پال ۱۴۰۱-۱۳۸۹</p>    
             </div>
         </footer>
     );
