@@ -31,6 +31,7 @@ div[role='menu'].products-menu {
     @include dropMeuBorder;
     @include dropDownPosition (absolute, 65px, 353px);
     padding: 10px 0;
+    box-shadow: 2px 4px 10px rgb(177, 197, 219);
 }
 
 .products-first-col {

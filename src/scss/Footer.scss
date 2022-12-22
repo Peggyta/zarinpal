@@ -30,15 +30,26 @@ footer {
 .support-request {
     @include fontDesign (1.3rem, $font-bold);
     font-weight: 100;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-left: 30px;
     
     .support-link {
         text-decoration: none;
-        color: $secondary-color; 
+        color: $secondary-color;
     }
     
     .support-arrow {
-        margin-right: 10px;
+        margin-right: 10px; 
+        color: $secondary-color;
     }
+}
+
+.support-req-icon {
+    position: absolute;
+    left:0;
+    top:5px
 }
 
 /*footer section */
@@ -86,10 +97,16 @@ footer {
 
 .copy-right-footer {
     margin: 50px 0;
+    display: flex;
+    justify-content: center;
     p {
         text-align: center;
         @include fontDesign (0.85rem, $font-default);
         color: $primary-color;
+    }
+    span {
+        padding-left: 5px;
+        padding-top: 2px;
     }
 }
 
@@ -113,9 +130,7 @@ footer {
     }
     .support-request {
         font-size: 1.1rem;
-        .support-arrow {
-            margin-bottom: -5px;
-        }
+        
     }
     .footer-section {
         flex-direction: column;
@@ -140,11 +155,20 @@ footer {
     }
     .support-request {
         background-color: $footer-color;
-        padding: 10px 15px;
+        padding: 10px 20px;
         margin-top: 7px;
         border-radius: 37px;
         font-size: 1rem;
+        position: unset;
+        .support-arrow {
+            margin-top: 4px;
+        }
     }
+
+    .support-req-icon {
+        position: unset;
+    }
+
     
     .footer-section {
         .shortcut-section {

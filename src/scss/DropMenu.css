@@ -47,6 +47,8 @@ div[role='menu'].visible {
   position: absolute;
   top: 65px;
   left: 105px;
+  -webkit-box-shadow: 2px 4px 10px #b1c5db;
+          box-shadow: 2px 4px 10px #b1c5db;
 }
 
 .drop-list-items {

@@ -61,6 +61,8 @@ div[role='menu'].products-menu {
   top: 65px;
   left: 353px;
   padding: 10px 0;
+  -webkit-box-shadow: 2px 4px 10px #b1c5db;
+          box-shadow: 2px 4px 10px #b1c5db;
 }
 
 .products-first-col {

@@ -19,6 +19,7 @@ div[role='menu'].visible {
     background-color: $light-color;
     @include dropMeuBorder;
     @include dropDownPosition (absolute, 65px, 105px);
+    box-shadow: 2px 4px 10px rgb(177, 197, 219);
 }
 
 .drop-list-items {
