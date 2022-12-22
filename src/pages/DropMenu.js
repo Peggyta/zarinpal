@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
 import { FiChevronDown } from 'react-icons/fi';
 import '../scss/DropMenu.css';
